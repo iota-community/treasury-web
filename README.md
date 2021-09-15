@@ -1,5 +1,7 @@
 # Overview
-Treasury Web
+Treasury Web Static Website. 
+
+Please either use /admin/ to edit content or create a pull request. See Netlify CMS for more help.
 
 ### Technologies used:
 
@@ -40,6 +42,6 @@ npm run build
 npm run start
 ```
 
-## Credits
+---
 
-Surjith S M ( [@surjithctly](https://surjithctly.in/) ) of n
+> big thanks for neat kick-starter template to [surjithctly/neat-starter](https://github.com/surjithctly/neat-starter)

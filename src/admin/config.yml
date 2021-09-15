@@ -10,7 +10,7 @@ publish_mode: editorial_workflow
 collections:
   - label: "Voting Information"
     name: "votingInfo"
-    folder: "src/votingInfoItems"
+    folder: "src/_content/votingInfoItems"
     create: true
     editor:
       preview: true
@@ -20,7 +20,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Faq"
     name: "faq"
-    folder: "src/faqItems"
+    folder: "src/_content/faqItems"
     create: true
     editor:
       preview: true
@@ -30,7 +30,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Blog"
     name: "blog"
-    folder: "src/posts"
+    folder: "src/_content/posts"
     create: true
     editor:
       preview: true

@@ -1,8 +1,8 @@
 name: Pages BUIDL
 on: 
   push:
-  branches:
-    - main
+    branches:
+      - main
 
 jobs:
   build_deploy:

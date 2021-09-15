@@ -1,0 +1,25 @@
+---
+layout: default
+title: Frequently Asked Questions
+---
+
+<div class="container relative mx-auto lg:h-auto flex flex-col justify-center items-center">
+    <ul class="w-full lg:space-y-16">
+        {% set faqlist = collections.faq %}
+
+        {% for f in faqlist | reverse %}
+        <li class="relative">
+
+            <h2 class="mb-4">{{f.data.title}}</h2>
+            <p class="lg:my-4 text-secondary tracking-wider">
+                {{ f.templateContent | safe }}
+            </p>
+
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<section class="mt-15">
+
+</section>

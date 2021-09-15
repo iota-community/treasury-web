@@ -1,0 +1,51 @@
+---
+layout: default
+title: Voter Information
+---
+
+<div class="container relative mx-auto lg:h-auto flex flex-col justify-center items-center">
+    <div class="faq_img"></div>
+    <h2 class="uppercase">The Voting Mechanism</h2>
+
+    <p class="lg:my-4 text-secondary tracking-wider">
+        IOTA holders will receive an updated version of the Firefly Wallet with an implemented option to vote.Votes are
+        related to the balance of a user.
+        100 Mi = 100 million votes
+    </p>
+
+    <div class="mx-auto lg:my-16">
+        <ul class="shadow-box">
+            {% set votingInfolist = collections.votingInfo %}
+
+            {% for v in votingInfolist | reverse %}
+            <li class="relative" x-data="{selected:null}">
+
+                <button type="button" class="w-full px-8 py-6 text-left"
+                    @click="selected !== 1 ? selected = 1 : selected = null">
+                    <div class="flex items-center justify-center">
+                        <h3>{{v.data.title}}</h3>
+                        <div class="ico-plus">
+                            <span x-show="selected !== 1">open</span>
+                            <span x-show="selected === 1">close</span>
+                        </div>
+                    </div>
+                </button>
+
+                <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1"
+                    x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                    <div class="p-6">
+                        {{ v.templateContent | safe }}
+                    </div>
+                </div>
+
+            </li>
+            {% endfor %}
+
+        </ul>
+    </div>
+
+</div>
+
+<section class="mt-15">
+
+</section>

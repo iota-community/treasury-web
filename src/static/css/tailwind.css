@@ -1,0 +1,153 @@
+:root {
+  --color-primary: #F3C083;
+  --color-secondary: #FFFFFF;
+  --color-dark: #363E54;
+  --color-border: #4E5B7A;
+  --color-nav: #383F55;
+  --color-tile-hover: #3A4152;
+  --color-link: #EBA369;
+  /* ... */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Your Custom CSS Goes here*/
+
+html {
+  @apply text-secondary min-h-full min-w-full;
+  
+  background: rgba(78, 91, 122, 1.0);
+  background: -webkit-radial-gradient(center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0));
+  background: -moz-radial-gradient(center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0));
+  background: radial-gradient(ellipse at center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0));
+}
+
+.heading-vector {
+  background: url('../img/star_pattern.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+.logo {
+  text-indent: -9999px;
+  width: 200px;
+  height: 50px;
+  background: url('../img/logo.svg') no-repeat;
+  background-size: 100%;
+}
+
+.logo-icon {
+  display: block;
+  text-indent: -9999px;
+  width: 200px;
+  height: 50px;
+  background: url('../img/logo_icon.svg') no-repeat;
+  background-size: 100%;
+}
+
+.logo-hp {
+  display: block;
+  text-indent: -9999px;
+  width: 400px;
+  height: 200px;
+  background: url('../img/logo_hp.svg') no-repeat;
+  background-size: 100%;
+}
+
+.faq_img {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  margin-left: -374px;
+  text-indent: -9999px;
+  width: 374px;
+  height: 310px;
+  background: url('../img/faq_illustration.svg') no-repeat;
+  background-size: 100%;
+}
+
+.how_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -281px;
+  text-indent: -9999px;
+  width: 281px;
+  height: 272px;
+  background: url('../img/how_illustration.svg') no-repeat;
+  background-size: 100%;
+}
+
+nav {
+  @apply rounded-3xl shadow-sm bg-navColor lg:px-24 lg:py-3 leading-4 lg:mx-4 lg:mt-6;
+}
+
+.nav-transparent {
+  background: rgba(56, 63, 85, .7);
+}
+
+.nav__item a {
+  @apply font-bold text-lg border-b-2 border-transparent transition-colors hover:border-primary;
+}
+
+.header {
+  @apply lg:h-128;
+
+  background: url('../img/waves.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+footer {
+  @apply bottom-0 text-center w-full py-4;
+}
+
+.ico-plus {
+  @apply border-t-2 border-dark mt-2 bottom-0 left-0 right-0 absolute text-center;
+}
+
+.ico-plus span {
+  @apply bg-dark rounded-b-2xl px-4 pt-1 pb-2;
+}
+
+.link {
+  @apply text-primary hover:text-link;
+}
+
+abbr {
+  @apply text-link font-black text-sm tracking-wider;
+}
+
+h1 {
+  @apply text-4xl mb-3 text-center lg:text-5xl lg:py-40;
+}
+
+h2 {
+  @apply lg:text-4xl text-3xl font-bold text-primary;
+}
+
+h3 {
+  @apply text-2xl font-bold mb-3 text-link uppercase;
+}
+
+.custom-divider {
+
+  @apply block;
+
+  text-indent: -9999px;
+  width: 184px;
+  height: 18px;
+  background: url('../img/divider_custom.svg') no-repeat;
+  background-size: 100%;
+}
+
+/* Syntax Highlighting*/
+
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
+  @apply bg-gray-800;
+}

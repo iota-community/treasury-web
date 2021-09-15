@@ -1,0 +1,41 @@
+---
+layout: blog
+---
+
+<section class="mt-15">
+    {% set postslist = collections.post %}
+
+    {% for post in postslist | reverse %}
+        <article class="my-8">
+            <h2 class="font-bold text-3xl text-primary hover:text-link mb-2">
+                <a href="{{ post.url | url }}">
+                    {% if post.data.title %}
+                        {{ post.data.title }}
+                    {% else %}
+                        Untitled
+                    {% endif %}
+                </a>
+            </h2>
+            <p class="text-base leading-6 text-primary mb-3">
+                <time>
+                    {{ post.date | readableDate }}
+                    by
+                    <a>{{ post.data.author }}</a>
+
+                </time>
+            </p>
+            {% if post.data.description %}
+                <p class="text-lg text-secondary mb-3">
+                    {{ post.data.description }}
+                </p>
+            {% endif %}
+
+            <p>
+                <a href="{{ post.url | url }}" class="font-bold text-lg hover:text-link">
+                    Read more →
+                </a>
+            </p>
+
+        </article>
+    {% endfor %}
+</section>

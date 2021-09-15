@@ -1,0 +1,26 @@
+<!-- Social links -->
+
+<div class="w-full flex justify-center lg:space-x-6 lg:mb-12 lg:mt-24">
+    {% if socials.links %}
+
+    {% for item in socials.links %}
+    <a href="{{item.url}}" target="_blank"
+        class="group w-16 text-center p-5 rounded-full shadow-md bg-primary hover:bg-link transition-colors">
+        <p>{{item.icon}}</p>
+    </a>
+    {% endfor %}
+
+    {% endif %}
+</div>
+
+<footer>
+    <small class="text-secondary border-t border-borderColor pt-4">Copyright ©
+        {{settings.name}}
+        2020. Made with ❤ by
+        <a href="{{settings.url}}" target="_blank" class="underline">{{settings.author}}</a>
+        •
+        <a href="https://github.com/iota-community/treasury-website" class="underline" target="_blank" rel="noopener">View on Github</a>
+    </small>
+</footer>
+
+<!-- class="{{ 'fixed' if path == 'home' }}" -->

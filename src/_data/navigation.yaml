@@ -1,0 +1,12 @@
+---
+items:
+  - text: Home
+    url: "/"
+  - text: How To
+    url: "/how-to"
+  - text: Voting Info
+    url: "/voting-information"
+  - text: FAQ
+    url: "/faq"
+  - text: Blog
+    url: "/blog"

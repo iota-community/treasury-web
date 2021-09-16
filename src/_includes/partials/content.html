@@ -51,7 +51,7 @@
     {% if quicklinks.links %}
 
     {% for item in quicklinks.links %}
-    <a href="{{item.url}}"
+    <a href="{{item.url | url}}"
         class="group p-5 rounded-3xl shadow-md bg-tileColor hover:bg-tileHover transition-colors">
         <h3 class="group-hover:text-borderColor">{{item.title}}</h3>
         <p>{{item.desc}}</p>

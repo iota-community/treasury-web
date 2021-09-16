@@ -1,7 +1,7 @@
 # Overview
 Treasury Web Static Website. 
 
-If you want to use CMS functions, please either use /admin/ to edit content or create a pull request. See Netlify CMS for more help. This is only currently supported locally.
+If you want to use CMS functions, please either use /admin/ to edit content or create a pull request. See Netlify CMS for more help. This is supported locally only.
 
 ### Technologies used:
 

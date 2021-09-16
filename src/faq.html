@@ -10,8 +10,8 @@ title: Frequently Asked Questions
         {% for f in faqlist | reverse %}
         <li class="relative">
 
-            <h2 class="mb-4">{{f.data.title}}</h2>
-            <p class="lg:my-4 text-secondary tracking-wider">
+            <h2 class="text-left">{{f.data.title}}</h2>
+            <p class="my-4 text-secondary tracking-wider">
                 {{ f.templateContent | safe }}
             </p>
 

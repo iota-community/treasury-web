@@ -4,48 +4,101 @@ title: Voter Information
 ---
 
 <div class="container relative mx-auto lg:h-auto flex flex-col justify-center items-center">
-    <div class="faq_img"></div>
-    <h2 class="uppercase">The Voting Mechanism</h2>
 
-    <p class="lg:my-4 text-secondary tracking-wider">
-        IOTA holders will receive an updated version of the Firefly Wallet with an implemented option to vote.Votes are
-        related to the balance of a user.
-        100 Mi = 100 million votes
-    </p>
+    <!-- TLDR part -->
+    <div class="list mb-16">
+        <h2 class="uppercase">TL:DR</h2>
+        <ul class="my-4 text-secondary tracking-wider">
+            <li>
+                In this vote you are asked to decide what should happen to a pool of Tokens that has not been claimed
+                for a long time
+            </li>
+            <li>
+                This Tokens are currently not migrated and the migration prohibited by the node operators
+            </li>
+            <li>You have to choose from 2 options</li>
+            <li>The system has been build by community developers</li>
+            <li>To participate in the vote you need to have IOTA Tokens in the <a>Firefly Wallet</a></li>
+            <li>1 IOTA Tokens equals 1 Vote</li>
+            <li>You can initiate this vote here on the Website</li>
+            <li>This website can connect with your Profile in the <a>Firefly Wallet</a></li>
+            <li>After you have connected your Firefly Wallet you can decide how much Votes you want to use for an Option
+            </li>
+            <li>Confirmation of your vote happens in the Firefly Wallet, so you will be directed and Firefly Wallet
+                opens, you need to confirm the vote using your Stronghold password, or Ledger device</li>
+            <li>A vote is a transaction that you send to your own address.</li>
+            <li>Included in this transaction is the voting data</li>
+            <li>You are able to change your vote untill xx.xx.21 xx:xx UTC without any consequences</li>
+            <li>After this time your vote will start to gain voting weight for 7 days</li>
+            <li>Only if you keep your vote for the full 7 days you gain the full voting weight of your tokens.</li>
+            <li>Starting a vote after xx.xx.21 xx:xx UTC is possible, but you can only gain a part of your full voting
+                power and not reach 100% voting weight</li>
+            <li>The vote cost you nothing, no transaction fees or any other costs are involved</li>
+            <li>Your IOTA Tokens are aways available for you. If you move them away from the voting address your vote
+                will not gain anymore weight</li>
+            <li>Votes will be counted by the community in their Hornet nodes.</li>
+            <li>The Hornet nodes will produce the count and the community has always access to this voting Data that is
+                dispalyed here on the website</li>
+        </ul>
 
-    <div class="mx-auto lg:my-16">
-        <ul class="shadow-box">
-            {% set votingInfolist = collections.votingInfo %}
+        <div class="text-center lg:my-16">
+            <h3>Questions?</h3>
+            <p>Take a look in <a href="/faq">FAQ</a></p>
+        </div>
 
-            {% for v in votingInfolist | reverse %}
-            <li class="relative" x-data="{selected:null}">
+        <div class="lg:my-16 text-center">
+            <div class="download_img">
+                <h2 class="-mt-10">Download the Firefly wallet</h2>
+                <a class="btn lg:w-144" href="https://firefly.iota.org/" target="_blank">Download</a>
+            </div>
+        </div>
+    </div>
 
-                <button type="button" class="w-full px-8 py-6 text-left"
-                    @click="selected !== 1 ? selected = 1 : selected = null">
-                    <div class="flex items-center justify-center">
-                        <h3>{{v.data.title}}</h3>
-                        <div class="ico-plus">
-                            <span x-show="selected !== 1">open</span>
-                            <span x-show="selected === 1">close</span>
+    <div class="custom-divider"></div>
+
+    <!-- Voting Mechanism part -->
+    <div class="relative lg:my-12">
+        <div class="faq_img hidden lg:block"></div>
+        <h2 class="uppercase">The Voting Mechanism</h2>
+
+        <p class="my-4 text-secondary tracking-wider">
+            IOTA holders will receive an updated version of the Firefly Wallet with an implemented option to vote.Votes
+            are
+            related to the balance of a user.
+            100 Mi = 100 million votes
+        </p>
+
+        <div class="mx-auto lg:my-16">
+            <ul class="shadow-box">
+                {% set votingInfolist = collections.votingInfo %}
+
+                {% for v in votingInfolist | reverse %}
+                <li class="relative" x-data="{selected:null}">
+
+                    <button type="button" class="w-full px-8 py-6 text-left"
+                        @click="selected !== 1 ? selected = 1 : selected = null">
+                        <div class="flex items-center justify-center">
+                            <h3>{{v.data.title}}</h3>
+                            <div class="ico-plus">
+                                <span x-show="selected !== 1">open</span>
+                                <span x-show="selected === 1">close</span>
+                            </div>
+                        </div>
+                    </button>
+
+                    <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
+                        x-ref="container1"
+                        x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                        <div class="p-6">
+                            {{ v.templateContent | safe }}
                         </div>
                     </div>
-                </button>
 
-                <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container1"
-                    x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                    <div class="p-6">
-                        {{ v.templateContent | safe }}
-                    </div>
-                </div>
+                </li>
+                {% endfor %}
 
-            </li>
-            {% endfor %}
-
-        </ul>
+            </ul>
+        </div>
     </div>
 
 </div>
-
-<section class="mt-15">
-
-</section>

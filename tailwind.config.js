@@ -2,13 +2,13 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  // purge: {
-  //   mode: "all",
-  //   content: ["./**/*.html"],
-  //   options: {
-  //     whitelist: [],
-  //   },
-  // },
+  purge: {
+    mode: "all",
+    content: ["./**/*.html"],
+    options: {
+      whitelist: [],
+    },
+  },
   theme: {
     borderColor: theme => ({
       ...theme('colors'),

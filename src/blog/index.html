@@ -7,7 +7,7 @@ layout: blog
 
     {% for post in postslist | reverse %}
         <article class="my-8">
-            <h2 class="font-bold text-3xl text-primary hover:text-link text-left">
+            <h2 class="font-bold text-primary hover:text-link text-left">
                 <a href="{{ post.url | url }}">
                     {% if post.data.title %}
                         {{ post.data.title }}

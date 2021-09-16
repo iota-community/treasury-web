@@ -198,7 +198,7 @@ h1 {
 }
 
 h2 {
-  @apply lg:text-4xl text-xl font-bold text-primary mb-6 lg:mb-8 text-center;
+  @apply lg:text-3xl text-xl font-bold text-primary mb-6 lg:mb-8 text-center;
 }
 
 h3 {

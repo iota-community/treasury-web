@@ -18,9 +18,26 @@ html {
   @apply text-secondary min-h-full min-w-full;
   
   background: rgba(78, 91, 122, 1.0);
-  background: -webkit-radial-gradient(center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0));
-  background: -moz-radial-gradient(center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0));
-  background: radial-gradient(ellipse at center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0));
+  background: -webkit-radial-gradient(center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0)) fixed;
+  background: -moz-radial-gradient(center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0)) fixed;
+  background: radial-gradient(ellipse at center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0)) fixed;
+}
+
+.no-scroll {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    overflow: hidden;
+    background: rgba(78, 91, 122, 1.0);
+    background: -webkit-radial-gradient(center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0)) fixed;
+    background: -moz-radial-gradient(center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0)) fixed;
+    background: radial-gradient(ellipse at center, rgba(78, 91, 122, 1.0), rgba(54, 63, 82, 1.0)) fixed;
+}
+
+.no-scroll .header {
+  margin-top: 0;
 }
 
 .header {
@@ -30,15 +47,19 @@ html {
   background-size: cover;
 }
 
+.heading-vector {
+  background: url('../img/star_pattern.svg') no-repeat;
+  background-size: 0;
+}
+
 @media (min-width: 1024px) { 
   .header {
     background-size: 100% 100%;
   }
-}
 
-.heading-vector {
-  background: url('../img/star_pattern.svg') no-repeat;
-  background-size: 100% 100%;
+  .heading-vector {
+    background-size: 100% 100%;
+  }
 }
 
 .logo {
@@ -103,7 +124,7 @@ html {
 }
 
 nav {
-  @apply rounded-3xl shadow-sm bg-navColor px-8 ml-6 mt-4 mb-8 lg:px-24 lg:py-3 leading-4 lg:mx-4 lg:mt-6;
+  @apply rounded-3xl shadow-sm bg-navColor mx-6 mt-4 mb-8 lg:px-24 lg:py-3 leading-4 lg:mx-4 lg:mt-6;
 }
 
 .nav-transparent {
@@ -111,7 +132,7 @@ nav {
 }
 
 .nav__item a {
-  @apply font-bold text-lg border-b-2 border-transparent transition-colors hover:border-primary;
+  @apply font-bold text-2xl lg:text-lg border-b-2 border-transparent transition-colors hover:border-primary;
 }
 
 .list ul > li {
@@ -145,9 +166,7 @@ nav {
 }
 
 .container {
-  @apply px-8 lg:px-4;
-
-  max-width: 1000px;
+  @apply px-8 lg:px-4 lg:max-w-2xl xl:max-w-3xl 2xl:max-w-4xl;
 }
 
 footer {
@@ -163,19 +182,23 @@ footer {
 }
 
 .link {
-  @apply text-primary hover:text-link;
+  @apply text-primary text-lg hover:text-link;
 }
 
 abbr {
   @apply text-link font-black text-sm tracking-wider;
 }
 
+p {
+  @apply text-lg;
+}
+
 h1 {
-  @apply text-3xl mb-3 text-center lg:text-5xl lg:py-40;
+  @apply text-2xl mb-3 text-center lg:text-5xl lg:py-40;
 }
 
 h2 {
-  @apply lg:text-4xl text-2xl font-bold text-primary mb-6 lg:mb-8 text-center;
+  @apply lg:text-4xl text-xl font-bold text-primary mb-6 lg:mb-8 text-center;
 }
 
 h3 {

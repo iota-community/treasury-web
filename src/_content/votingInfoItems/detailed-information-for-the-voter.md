@@ -7,22 +7,21 @@ order: 2
 
 The community has been offered the option to decide the future destiny of unclaimed tokens from the initial crowd sale and some network upgrades in 2017. 
 
-Users needed to claim their funds in these early stages of the network.
-Token claims had to be made on or before June 16th 2021. 
+In these early stages of the network, users needed to claim their tokens following a few important upgrades in the network. After so many years of waiting, the final deadline for claims had to be made on or before June 16th 2021. 
 
-These Unclaimed Tokens were transferred into community control the following day. It is now up to the community to decide how to utilize these funds.
+It is now up to the community to decide how to utilize these unclaimed funds.
 
 On the day the Chrysalis upgrade took place Node Operators had two options: 
 
-- [ ] Choose to keep everything as it was before **(IOTA AS Fork)** 
+- [ ] Follow a version of the network where those funds are still under the unpredictable control of a single actor **(IOTA AS Fork)** 
 - [ ] Give the community the chance to decide the future use of those funds. **(IOTA Chrysalis Mainnet)**.
 
 
-No Node operators or users came forward in support of IOTA AS.****
+None of the Node operators or users came forward in support of the IOTA AS Network.****
 
-This left the IOTA community with two options to choose from: Build vs Treasury. Other options were not part of the original two choices because they can occur later.
+This is a clear decision by the IOTA community that they want to go the way to decide the further destiny of the tokens with two options to choose from: Build vs Treasury. Other options were not part of the original two choices because they can occur later.
 
-A detail explanation about this topic can be found in the following Blog Posts from the IF:
+A detail explanation about the above described topics can be found in the following Blog Posts published by the IOTA Foundation:
  
 https://blog.iota.org/unclaimed-tokens-community-treasury-and-iota-as-faq/
 

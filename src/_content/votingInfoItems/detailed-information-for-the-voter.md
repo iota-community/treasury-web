@@ -20,7 +20,7 @@ On the day the Chrysalis upgrade took place Node Operators had two options:
 
 No Node operators or users came forward in support of IOTA AS.****
 
-This left the IOTA community with two options to choose from: Build vs Treasury. 
+This left the IOTA community with two options to choose from: Build vs Treasury. Other options were not part of the original two choices because they can occur later.
 
 A detail explanation about this topic can be found in the following Blog Posts from the IF:
  

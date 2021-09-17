@@ -57,8 +57,8 @@ title: Voter Information
     <div class="custom-divider"></div>
 
     <!-- Voting Mechanism part -->
-    <div class="relative lg:my-12">
-        <div class="faq_img hidden lg:block"></div>
+    <div class="relative max-w-full lg:my-12">
+        <div class="faq_img hidden lg:block lg:max-w-xs lg:-ml-80"></div>
         <h2 class="uppercase">The Voting Mechanism</h2>
 
         <p class="my-4 text-secondary tracking-wider">
@@ -89,7 +89,7 @@ title: Voter Information
                     <div class="relative overflow-hidden transition-all max-h-0 duration-700" style=""
                         x-ref="container1"
                         x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                        <div class="p-6">
+                        <div>
                             {{ v.templateContent | safe }}
                         </div>
                     </div>

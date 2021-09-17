@@ -1,31 +1,36 @@
-<div class="w-full lg:fixed" x-data="{ scrollAtTop: true }">
-    <nav class="flex items-center h-16 lg:h-20 justify-center flex-wrap z-10"
-        :class="{ 'nav-transparent':!scrollAtTop }"
+<div class="w-full z-10 lg:fixed" x-data="{ scrollAtTop: true }">
+    <nav class="lg:flex lg:items-center lg:justify-center lg:flex-wrap lg:h-20 lg:px-8" :class="{ 'nav-transparent':!scrollAtTop }"
         @scroll.window="scrollAtTop = (window.pageYOffset > 50) ? false : true" x-data="{ isOpen: false }"
         @keydown.escape="isOpen = false">
-        <!--Logo etc-->
-        <div class="flex items-center">
-            <a href="/" class="logo-icon lg:hidden text-indigo-500 font-bold text-lg">
-                IOTA Treasury</a>
+
+        <div class="flex items-center px-8 h-16 justify-center lg:hidden"
+        :class="{ 'fixed top-4 left-6 right-6 z-20 rounded-3xl shadow-sm bg-navColor': isOpen }">
+            <!--Logo etc-->
+            <div class="flex items-center">
+                <a href="/" class="logo-icon lg:hidden text-indigo-500 font-bold text-lg">
+                    IOTA Treasury</a>
+            </div>
+
+            <!--Toggle button (hidden on large screens)-->
+            <button @click="isOpen = !isOpen" type="button" @click.away="isOpen = false"
+                class="ml-auto block lg:hidden px-2 text-primary focus:outline-none focus:text-primary-500" aria-label="Menu">
+                <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                    <path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                    <path x-show="!isOpen" fill-rule="evenodd"
+                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                </svg>
+            </button>
+            <!-- :class="{ 'transition transform-180': isOpen }" -->
+
         </div>
 
-        <!--Toggle button (hidden on large screens)-->
-        <button @click="isOpen = !isOpen" type="button" @click.away="isOpen = false"
-            class="ml-auto block lg:hidden px-2 text-primary focus:outline-none focus:text-primary-500"
-            :class="{ 'transition transform-180': isOpen }" aria-label="Menu">
-            <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                <path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
-                <path x-show="!isOpen" fill-rule="evenodd"
-                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
-            </svg>
-        </button>
-
         <!--Menu-->
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:max-w-7xl text-center z-20 top-16 bottom-0 left-0 right-0 overflow-hidden bg-navColor lg:bg-transparent"
-            :class="{ 'fixed shadow-3xl': isOpen, 'hidden': !isOpen }" x-show.transition="true">
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:max-w-7xl text-center z-20 top-16 bottom-0 left-0 right-0 overflow-hidden lg:bg-transparent"
+            :class="{ 'fixed': isOpen, 'hidden': !isOpen }">
+            <!-- x-show.transition="true" -->
 
-            <a href="/" class="logo hidden lg:block text-indigo-500 font-bold text-lg">
+            <a href="/" class="logo hidden lg:block font-bold text-lg">
                 IOTA Treasury</a>
 
             {% if navigation.items %}
@@ -35,13 +40,17 @@
                 {% for item in navigation.items %}
                 <li class="nav__item mx-4 my-2">
                     <a @click="isOpen = false"
-                        class="text-ml inline-block text-secondary no-underline hover:text-indigo-500"
+                        class="text-ml inline-block text-secondary no-underline"
                         href="{{ item.url | url }}">{{ item.text }}</a>
                 </li>
                 {% endfor %}
             </ul>
 
             {% endif %}
+        </div>
+
+        <div class="no-scroll" :class="{ 'fixed': isOpen, 'hidden': !isOpen }">
+            <div class="header"></div>
         </div>
     </nav>
 </div>

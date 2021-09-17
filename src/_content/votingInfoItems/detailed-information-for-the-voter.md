@@ -19,7 +19,7 @@ On the day the Chrysalis upgrade took place Node Operators had two options:
 
 None of the Node operators or users came forward in support of the IOTA AS Network.****
 
-This is a clear decision by the IOTA community that they want to go the way to decide the further destiny of the tokens with two options to choose from: Build vs Treasury. 
+This is a clear decision by the IOTA community that they want to go the way to decide the further destiny of the tokens with two options to choose from: Build vs Treasury. Other options were not part of the original two choices because they can occur later.
 
 A detail explanation about the above described topics can be found in the following Blog Posts published by the IOTA Foundation:
  

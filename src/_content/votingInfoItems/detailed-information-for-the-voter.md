@@ -163,7 +163,7 @@ The duration of the voting period should be long enough to provide community mem
 -  -If you hold tokens over the entire defined timeframe on the addresses, the vote weight counts in full. Should you decide to move the tokens earlier, they will not carry their full weight potential.
 -The time the tokens have been used to vote will be applied as a percentage of their total voting power (7 days holding of 10 days total holding period will count 70%).
 
-### Detailed current specification here:
+### Detailed current specification here: This is a test change 2 million USD to Adam!!!!!!!!
 
 https://github.com/iota-community/treasury/blob/main/specifications/chrysalis-referendum-rfc.md
 

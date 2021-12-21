@@ -229,9 +229,9 @@ a.blue-link {
 }
 
 .button {
-    font-size: 12px;
-    line-height: 12px;
-    padding: 14px 22px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 14px 26px;
 	text-align: center;
     border-radius: 10px;
     border: 1px solid #108CFF;
@@ -309,6 +309,8 @@ img.icon {
 .arrow {
 	position: relative;
 	display: block;
+	text-indent: -32px;
+	padding-left: 32px;
 }
 
 .arrow:hover {
@@ -332,10 +334,6 @@ img.icon {
 	transition: all 250ms ease-in-out;
 }
 
-.arrow:hover::before, .arrow:focus::before {
-	margin-right: 20px;
-}
-
 /* Header */
 #masthead {
 	position: absolute;
@@ -344,7 +342,7 @@ img.icon {
 	padding: 27px 0;
     background: #F6F9FF;
 	border-bottom: 1px solid #D7E8FE;
-	z-index: 9;
+	z-index: 99999;
 }
 
 #masthead.locked {
@@ -733,10 +731,6 @@ img.icon {
 	/* About */
 	#steps .box::after {
 		width: 45px;
-	}
-
-	.arrow:hover::before, .arrow:focus::before {
-		margin-right: 18px;
 	}
 }
 

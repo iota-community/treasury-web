@@ -49,6 +49,15 @@ jQuery(function ($) {
             }
         });
 
+    // Smooth scroll for faq anchor links
+    $("#faq-link").click(function(e) {
+        var clickedId = $(this).attr('href');
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $(clickedId).offset().top - 150
+        }, 1000);
+    });
+
     // Scroll reveal effect
     ScrollReveal().reveal('.reveal', {scale: 0.8, duration: 600, interval: 150 });
 });

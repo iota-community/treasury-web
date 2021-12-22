@@ -20,8 +20,8 @@ html, body {
 
 html, body, h1, h2, h3, h4, h5, p, a, ul, li, .panel-title, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea, label, button, input, select, textarea {
 	color: #163965;
-	font-size: 15px;
-	line-height: 24px;
+	font-size: 18px;
+	line-height: 26px;
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 }
@@ -58,7 +58,7 @@ h4, h4 a {
 }
 
 .bit-larger {
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 1.2;
 }
 
@@ -81,15 +81,11 @@ p {
 	margin-bottom: 24px;
 }
 
-p a {
-	text-decoration: none;
-}
-
-a:hover {
+#page a {
 	text-decoration: underline;
 }
 
-a.button, a.button:hover {
+#page a:hover {
 	text-decoration: none;
 }
 
@@ -220,22 +216,18 @@ table {
 
 a.blue-link {
 	color: #108CFF;
-	text-decoration: underline;
 	font-weight: 600;
 }
 
-.blue-link:hover {
-	text-decoration: none;
-}
-
-.button {
-    font-size: 14px;
-    line-height: 14px;
-    padding: 14px 26px;
+.button, .button:visited, .button:any-link {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 15px 30px;
 	text-align: center;
     border-radius: 10px;
     border: 1px solid #108CFF;
-	background: #D7E8FE;
+	background: #108CFF;
+    color: #F0F5FE;
     margin-left: 20px;
 	margin-right: 20px;
     font-weight: 700;
@@ -243,19 +235,16 @@ a.blue-link {
     -moz-transition: all 150ms ease-in-out;
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
-	color: #163965;
 	min-width: 225px;
 	display: inline-block;
+	text-decoration: none !important;
+	min-width: 250px;
+	text-align: center;
 }
 
-.button.blue, .button.white:hover, .button:hover {
-    background: #108CFF;
-    color: #F0F5FE;
-}
-
-.button.white, .button.blue:hover {
-    background: #D7E8FE;
-    color: #163965;
+.button:hover {
+    background: #F0F5FE;
+    color: #108CFF;
 }
 
 .button.smaller {
@@ -264,7 +253,7 @@ a.blue-link {
 }
 
 .left {
-	margin-left: 0;
+	margin-left: 0 !important;
 }
 
 .border-radius {
@@ -321,10 +310,9 @@ img.icon {
 	content: "";
 	display: inline-block;
 	position: relative;
-	top: 1px;
 	width: 19px;
 	height: 15px;
-	background-image: url("../img/arrow.svg");
+	background-image: url("../img/arrow.png");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -352,8 +340,10 @@ img.icon {
 
 #masthead #main-menu a {
 	font-weight: 700;
-	margin: 0 20px;
+	margin: 0 10px;
 	position: relative;
+	font-size: 16px;
+	line-height: 16px;
 }
 
 #masthead #main-menu a:not(.button)::after {
@@ -534,12 +524,20 @@ img.icon {
 	max-height: 105px;
 }
 
+#tiles a {
+	text-decoration: none;
+}
+
+#tiles a:hover, #tiles a:focus {
+	text-decoration: underline;
+}
+
 /* Voting Tutorial */
-#steps .box {
+.steps .box {
 	position: relative;
 }
 
-#steps .box::after {
+.steps .box::after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -554,10 +552,31 @@ img.icon {
 	background-repeat: no-repeat;
 }
 
+.steps .box.arrowless::after {
+	display: none;
+}
+
 #ready {
 	background: #163965;
 	border-top: 1px solid #108CFF;
 	border-bottom: 1px solid #108CFF;
+}
+
+/* FAQs */
+#faqs .button {
+	background: transparent;
+	color: #163965;
+	padding: 15px 0;
+	margin: 0;
+	border: none;
+}
+
+#faqs .card-body {
+	border: 1px solid #D7E8FE;
+	background: #F6F9FF;
+	padding: 30px;
+	margin: 15px 0 50px 0;
+	border-radius: 30px;
 }
 
 /* Footer */
@@ -596,6 +615,10 @@ img.icon {
 	.right-md-15 {
 		padding-right: 15px;
 	}
+
+	.text-lg-right {
+        text-align: right;
+    }
 }
 
 @media (max-width: 991px) {
@@ -729,7 +752,7 @@ img.icon {
 	}
 
 	/* About */
-	#steps .box::after {
+	.steps .box::after {
 		width: 45px;
 	}
 }

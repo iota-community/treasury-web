@@ -78,6 +78,9 @@ The community has decided that 1000 IOTA (1 Ki) generate 1 vote for every milest
 - So a vote of 1 Mi for “build” will be counted like this:
 1000 votes for build on milestone x + 1000 votes for build on milestone y, + 1000 votes for build on milestone y,...and produce for a total holding period of 1000 milestones a result of: 
     - 1000 milestones x 1000 votes per milestone = 1 million votes for opinion build.
+    
+![image](https://user-images.githubusercontent.com/77154511/147019444-74cdd099-25f1-4584-88d9-788a8c299cbe.png)
+
 - All nodes will count all UTXO with attached voting metadata they observe during the “holding period” of the vote and add up the votes for every milestone until the voting phase ends (marked by a predefined ending milestone).
 - This also means that the factor “vote holding time” for tokens will significantly influence. Votes gain “weight” in relation to how long they are kept on an address. This is a crucial security feature of the voting mechanism that will reward token holders and punish voting “speculators” or “vote buyers” by forcing them to lock capital over a long time. 
 
@@ -94,8 +97,7 @@ Let's look at a few examples of the possible voting weight based on different va
 100 Mi vote for "Burn" for three days: 30% of the tokens voting weight vote for "Burn"
 100 Mi vote for "Build" for seven days: 70% of the tokens voting weight vote for "Build"
 
-Graphics explaining this!
-
+![image](https://user-images.githubusercontent.com/77154511/147019569-ab448f15-33f4-4c15-bcca-3645a2d86cdb.png)
 
 
 ## Frame 8

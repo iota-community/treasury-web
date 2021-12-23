@@ -14,7 +14,7 @@ title: Website landing page
   -  Learn how voting works
     
 ## Frame 2
-### Decide on the future of 57 Ti unclaimed tokens
+### Decide on the future of XX Ti unclaimed tokens
 
 *CTA1*
  -   Build 
@@ -32,7 +32,9 @@ The unclaimed tokens will be removed from the IOTA ledger, and the total supply 
 *Box1*
   - Community crowd sale in 2015
   
-    Before the launch of the IOTA network in 2016 with its genesis transaction, the founders of IOTA collected funds in exchange for the option to receive IOTA tokens in an initial crowd sale. The crowd sale participants had agreed to collect their purchased tokens in a timeframe of 90 days following the crowd sale. Otherwise, purchasers may permanently lose access to the crowd sale tokens.
+    Before the launch of the IOTA network in 2016 with its genesis transaction, the founders of IOTA collected funds in exchange for the option to receive IOTA tokens in an initial crowd sale. 
+
+The crowd sale participants had agreed to collect their purchased tokens in a timeframe of 90 days following the crowd sale. Otherwise, purchasers may permanently lose access to the crowd sale tokens.
     
 *Box2*
   - Network upgrade in 2017
@@ -47,20 +49,24 @@ The unclaimed tokens will be removed from the IOTA ledger, and the total supply 
 *Box4*
   - Chrysalis network upgrade April 2021
   
-     As these tokens should no longer be under the control of any single entity, a decision has to be made about their future.  The tokens should be under the control of the community, or they should be destroyed. The node operators took this first decision following the Chrysalis network upgrade in April 2021. Node operators had two options:
+     As these tokens should no longer be under the control of any single entity, a decision has to be made about their future.  The tokens should be under the control of the community, or they should be destroyed. 
+
+The node operators took this first decision following the Chrysalis network upgrade in April 2021. Node operators had two options:
    - Follow a version of the network where those funds are still under the control of a single actor (IOTA AS Fork)
    - Let the community decide the future use of the funds. (IOTA Chrysalis mainnet).
 
 *Box5*
   - Community treasury vote initiative
   
-    Shortly after the Chrysalis update, a governance channel was established in the IOTA Discord server where the IOTA community could discuss the vote at length.
-    Since these early days in May 2021, many members have been actively involved in developing a solution to give the whole IOTA community a voice and make a vote on the destiny of these tokens possible. A large group of community members has been meeting every two weeks to define and develop the voting system needed to make the first decision.
+   In middle of May 2021, a governance channel was established in the IOTA Discord server where the IOTA community could discuss the vote at length.
+    Since these early days, many members have been actively involved in developing a solution to give the whole IOTA community a voice and make a vote on the destiny of these tokens possible. 
+
+A large group of community members has been meeting every two weeks to define and develop the voting system needed to make the first decision.
     
 *Box6*
  - Community voting
  
-    Here we arrived today. You are now empowered to take on this crucial decision. You are using a voting system developed by the community, making it possible to collectively decide what should happen to those unclaimed tokens.
+    This is where we have arrived today. You are now empowered to take on this crucial decision. You are using a voting system developed by the community, making it possible to collectively decide what should happen to those unclaimed tokens.
     Cast your vote here
 
 
@@ -68,10 +74,10 @@ The unclaimed tokens will be removed from the IOTA ledger, and the total supply 
 ### How to vote
 
   - Hold IOTA tokens in the Firefly wallet
-    IOTA holders will receive an updated version of the Firefly Wallet with integrated voting functionality. Once you have updated Firefly, you can vote directly in the wallet.
+    Every IOTA holders will receive an updated version of the Firefly Wallet from the [official website](https://firefly.iota.org) with an integrated voting functionality. Once you have updated Firefly, you can vote directly in the Firefly wallet.
 
   - Reach your total voting weight by holding your tokens over time.
-    The number of votes is related to the balance of tokens a user holds for ten days. 1000 IOTA = 1 vote per milestone that passes during the ten-day holding period.
+    The number of your votes is related to the amount of tokens you choose to participate in the vote over a time frame of ten days. 1000 IOTA = 1 vote per milestone that passes during the ten-day holding period.
     
   - Cast your vote here and confirm it in Firefly.
     This website hosts an application that enables you to preselect your opinion, initiate the vote, and execute it in your Firefly wallet.

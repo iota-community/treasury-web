@@ -19,6 +19,7 @@ Commencing phase (seven days)
 
 Holding phase (10 days)
   - This period follows directly at the end of the commencing phase: the user's declared vote now starts to gain weight with increasing holding time. The declared vote will gain weight with every passing milestone (one milestone is issued every 10 seconds) in the network. Suppose the user manages to vote for the predefined number of milestones. In that case, the vote will reach the maximum voting weight related to the number of tokens associated with a vote. If users change their vote in between, the changed opinion starts gaining weight from the point where it was changed. Although the opinion changed, the previous opinion is not dismissed.
+![image](https://user-images.githubusercontent.com/77154511/147462450-35668104-9922-474b-85d4-71f232af1830.png)
 
 
 ## Frame 3
@@ -35,6 +36,7 @@ Hold IOTA tokens in the Firefly wallet to be able to cast a vote
 Increase your voting weight by holding tokens during the vote
   - The amount of voting weight your tokens gain is directly related to the time you hold the tokens on the address during the holding period. Nodes register and count votes per address for every passed milestone.
    - Only votes kept from the beginning until the end of the holding period can reach their total voting weight.
+![image](https://user-images.githubusercontent.com/77154511/147462519-a70a0a04-110e-49d4-884d-dff04754531b.png)
 
 
 ## Frame 4
@@ -53,6 +55,8 @@ Execution of the vote
 
   - The voting mechanism uses IOTA’s capability to issue value transactions with attached metadata. In a vote, a transaction will send the tokens residing on an address (and specifically, the unspent transaction outputs (UTXO) on the Tangle). In this transaction, the sender and receiver address is identical (you are sending the tokens to yourself). During this transaction, the metadata (vote event ID, voter opinion ID: build or burn) will be attached, and therefore immutably written onto the UTXOs of this address in the IOTA Tangle. So after the voting transaction, the tokens will still reside on the same address as before, but now with attached information that represents the voter's opinion. 
   - An external security audit provider will thoroughly audit this functionality.
+![image](https://user-images.githubusercontent.com/77154511/147462568-4d18ab74-ac9a-443e-a968-117fde12712e.png)
+
 
 ## Frame 5
 ### Counting of votes
@@ -69,6 +73,8 @@ Votes get counted in the Hornet nodes.
 - As a new milestone is issued every 10 seconds, it gives an exact counting as every change in opinions or balances will be recognized in a 10-second time frame.
 - After the defined “holding end – milestone”, the plugin produces an output with all observed UTXOs, balances, indexation payloads per milestone, and the final result as an accumulation of that milestone data. That information will also be available live during the vote via an API Endpoint in every node.
 - These live results will be visible [here on the website]
+![image](https://user-images.githubusercontent.com/77154511/147462603-d9fea39d-bf8c-4687-8429-5a985293315d.png)
+
 
 ## Frame 6
 ### Time based gain of voting weight

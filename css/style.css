@@ -623,8 +623,8 @@ img.icon {
 	}
 
 	.box.wider {
-		padding-left: 100px;
-		padding-right: 100px;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 }
 @media (min-width: 992px) {

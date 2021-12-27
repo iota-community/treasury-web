@@ -59,5 +59,7 @@ jQuery(function ($) {
     });
 
     // Scroll reveal effect
-    ScrollReveal().reveal('.reveal', {scale: 0.8, duration: 600, interval: 150 });
+    if ( $('body').hasClass('home') ) {
+        ScrollReveal().reveal('.reveal', {scale: 0.8, duration: 600, interval: 150 });
+    }
 });

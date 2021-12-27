@@ -10,7 +10,11 @@ The number of IOTA tokens you own will give you voting power in this decision.
 
 The procedure to cast a valid vote follows these steps. 
 1. Log in to your Firefly profile using your Pin code.
+<img width="964" alt="image" src="https://user-images.githubusercontent.com/77154511/147461834-57188455-8d14-46b6-9be8-f72495223a89.png">
+
 2. Enter the "governance" tab in the sidebar
+![Screenshot 2021-12-27 181725](https://user-images.githubusercontent.com/77154511/147462221-05b55137-99fd-4911-83af-2fe658a2b339.png)
+
 3. Cast your vote
     - Upon entering the governance tab of the Firefly wallet or using the voting application on iotatreasury.org your first decision is to state your opinion on what should happen to the Treasury Tokens. Choose "cast your vote".
 

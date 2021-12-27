@@ -72,13 +72,16 @@
 					</div>
 				</div>
 				<div class="row top-75 d-block d-lg-flex">
-					<div class="col col-lg-8">
+					<div class="col col-xl-6 col-xl-6">
 						<h4>Preparation phase</h4>
 						<p>Upon publishing the vote proposal to the GitHub Repository and implementing and displaying it to the Treasury website, the Hornet node operators can activate the vote proposal in their nodes to be prepared to count any votes issued.</p>
 						<h4 class="top-40">Commencing phase (seven days)</h4>
 						<p>The commencing phase starts on a predefined milestone in the IOTA network. After this milestone, users are free to cast their votes, change their opinions, and revoke or redo the vote as often as they want, using the Firefly wallet's voting functionality. Changes in voters' opinions during this time frame will not influence the final vote count of the voters.</p>
 						<h4 class="top-40">Holding phase (10 days)</h4>
 						<p>This period follows directly at the end of the commencing phase: the user's declared vote now starts to gain weight with increasing holding time. The declared vote will gain weight with every passing milestone (one milestone is issued every 10 seconds) in the network. Suppose the user manages to vote for the predefined number of milestones. In that case, the vote will reach the maximum voting weight related to the number of tokens associated with a vote. If users change their vote in between, the changed opinion starts gaining weight from the point where it was changed. Although the opinion changed, the previous opinion is not dismissed.</p>
+					</div>
+					<div class="col col-xl-5 offset-xl-1 text-center tabletmargin">
+						<img class="border-radius" src="img/holding-phase.jpg" alt="Holding phase">
 					</div>
 				</div>
 			</div>
@@ -88,8 +91,8 @@
 						<h2 class="marginless">Aquiring votes and voting weight</h2>
 					</div>
 				</div>
-				<div class="row top-75">
-					<div class="col col-lg-8">
+				<div class="row top-75 d-block d-lg-flex">
+					<div class="col col-xl-6 col-xl-6">
 						<h4>Any IOTA token holder can participate.</h4>
 						<ul>
 							<li>The number of votes is related to the balance of tokens held by the user. 1000 IOTA = 1 vote per milestone that passes during the defined holding period.</li>
@@ -106,6 +109,9 @@
 							<li>Only votes kept from the beginning until the end of the holding period can reach their total voting weight.</li>
 						</ul>
 					</div>
+					<div class="col col-xl-5 offset-xl-1 text-center tabletmargin">
+						<img class="border-radius" src="img/aquiring-votes.jpg" alt="Voting weight">
+					</div>
 				</div>
 			</div>
 			<div class="box wider border-radius bottom-120">
@@ -115,7 +121,7 @@
 					</div>
 				</div>
 				<div class="row top-75 d-block d-lg-flex">
-					<div class="col col-lg-8">
+					<div class="col col-xl-6 col-xl-6">
 						<p class="bit-larger"><strong>A) Initiate your vote directly here on the website</strong></p>
 						<p>This website includes a voting application. In this application, you can prepare your initial decision between Build or Burn.</p>
 						<p>Once this decision is taken, your vote will be forwarded to your Firefly wallet, where further selection and confirmation steps are required from you. Start voting here</p>
@@ -126,6 +132,9 @@
 						<p>The voting mechanism uses IOTA’s capability to issue value transactions with attached metadata. In a vote, a transaction will send the tokens residing on an address (and specifically, the unspent transaction outputs (UTXO) on the Tangle). In this transaction, the sender and receiver address is identical (you are sending the tokens to yourself). During this transaction, the metadata (vote event ID, voter opinion ID: build or burn) will be attached, and therefore immutably written onto the UTXOs of this address in the IOTA Tangle. So after the voting transaction, the tokens will still reside on the same address as before, but now with attached information that represents the voter's opinion.</p>
 						<p>An external security audit provider will thoroughly audit this functionality.</p>
 					</div>
+					<div class="col col-xl-5 offset-xl-1 text-center tabletmargin">
+						<img class="border-radius" src="img/cast-a-vote.jpg" alt="Cast a vote">
+					</div>
 				</div>
 			</div>
 			<div class="box wider border-radius bottom-120">
@@ -135,7 +144,7 @@
 					</div>
 				</div>
 				<div class="row top-75 d-block d-lg-flex">
-					<div class="col col-lg-8">
+					<div class="col col-xl-6 col-xl-6">
 						<h4>Votes get counted in the Hornet nodes.</h4>
 						<ul>
 							<li>A plugin/extension of the Hornet node software can be activated in every Hornet node. Nodes that initiate this plugin before the commencing period can produce the results because they will observe all addresses during the whole period.</li>
@@ -153,6 +162,9 @@
 							<li>After the defined “holding end – milestone”, the plugin produces an output with all observed UTXOs, balances, indexation payloads per milestone, and the final result as an accumulation of that milestone data. That information will also be available live during the vote via an API Endpoint in every node.</li>
 							<li>These live results will be visible [here on the website]</li>
 						</ul>
+					</div>
+					<div class="col col-xl-5 offset-xl-1 text-center tabletmargin">
+						<img class="border-radius" src="img/counting-votes.jpg" alt="Counting of votes">
 					</div>
 				</div>
 			</div>

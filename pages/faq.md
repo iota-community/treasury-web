@@ -27,12 +27,13 @@
    - If the community votes "Build":
    The community will need to develop a system that can guarantee decentralized governance over the tokens.
 
-   No spending from the treasury wallet can happen until the community has created this system.
+   No spending from the unclaimed token pool output can happen until the community has created this system.
 
-   The node operators will only accept and agree to migrate the tokens into the chrysalis network on an address that meets the following requirements:
-   - There is a system of decentralized governance in place.
+   The node operators will only accept and agree to unlock the tokens in the chrysalis network and move them on a new address if following requirements are met:
+   - There is a system of decentralized governance and ownership in place.
    - The system is distributed.
    - It is owned by the IOTA community and secured and managed using IOTA Smart Contracts (ISC).
+   - A system of decentralized decision making about spending of those tokens has been implemented.
 
    The community can use the Treasury website and voting system to propose the future governance structure and vote on those proposals.
 

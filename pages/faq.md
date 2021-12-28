@@ -2,26 +2,25 @@
 
 ## Unclaimed tokens
 
-- Q: What are the unclaimed tokens?
-   - A: The pool of IOTA tokens up for a vote in this decision generates from 2 events:
+- What are the unclaimed tokens?
+   - The pool of IOTA tokens up for a vote in this decision generates from 2 events:
    - 1.) The initial token sale of IOTA in 2015: 
      Early initial investors had the chance to buy IOTA tokens before the start of the IOTA Mainnet in 2015. They had to deposit Bitcoin, Next, or Jinn tokens to the founders, and for this, they had the right to claim IOTA tokens in a 90-day time frame after the Mainnet was launched. Some have missed this 90-day time frame for claiming. Over the following years, the involved parties have tried their best to find the remaining claimers and, by doing this, identified most of the initial purchasers. Despite all those attempts, some have never shown up again. The remaining funds from this process are now part of the unclaimed tokens pool, which is up for a vote in this recent decision.
    - 2.) The Kerl / Curl Bug in 2017:
      In 2017 a bug in the IOTA code was discovered, putting some users' funds at risk of being stolen. In a decision to protect the funds on IOTA addresses exposed to this bug, all IOTA Node operators voted to secure those addresses, transfer the funds into the custody of the IOTA Foundation, update the protocol to a bug-free version, and safe the holders from losing their tokens. After this network upgrade, the owners who have been affected by this decision had time until 16. June 2021 to reclaim their Funds by providing proof of ownership in a KYC process. Some, again, have failed to reclaim their tokens until this date. The remaining funds from this process are now part of the unclaimed tokens pool, which is up for a vote in this current decision.   
      
-- Q: How many tokens are unclaimed?
+- How many tokens are unclaimed?
    - After processing all existing claims, the remaining token amount in the unclaimed treasury pool is xx TI
 
-- Q: Where are the tokens right now?
+- Where are the tokens right now?
    - The tokens remain on a specially prepared output (a part of an address) which has been excluded from being accessible by all node operators that followed the network upgrade from IOTA 1.0 to IOTA 1.5 (current chrysalis mainnet)
 
-- Q What about the still unmigrated tokens from the Chrysalis upgrade 2021?
+- What about the still unmigrated tokens from the Chrysalis upgrade 2021?
    - These tokens are not part of the decision and can still be migrated to the new mainnet without any restrictions. This vote is only about tokens that have been unclaimed since the early days of the IOTA project.
 
 ## Possible outcomes
 
-- Q What will happen after the vote has been decided?
-     - A:
+- What will happen after the vote has been decided?
    - If the community votes "Burn":
    The node operators will initiate a network update that removes the tokens from the ledger forever without any possibility of adding them again. This will reduce the total token supply of IOTA.
 
@@ -47,71 +46,71 @@
 
    From this point on, the community can use the system to spend funds from the treasury after successful votes on spending proposals.
 
-- Q: What if the vote is a tie?
-   - A: If the vote turns out to be undecided (same amount of "build" as "burn" votes), the community will schedule a second vote.
+- What if the vote is a tie?
+   - If the vote turns out to be undecided (same amount of "build" as "burn" votes), the community will schedule a second vote.
 
-- Q: Is there a quorum rule?
-   - A: The community has decided not to require a minimum quorum.
+- Is there a quorum rule?
+   - The community has decided not to require a minimum quorum.
 
-- Q: What if there is a bug in the voting system?
+- What if there is a bug in the voting system?
    - in the very unlikely case that a bug occurs, the community has agreed to mark the first vote as invalid, fix the bug, do another security audit and schedule a new vote.
 
 ## Voting weight
 
-- Q: How is the voting weight calculated?
+- How is the voting weight calculated?
    - Voting weight is a metric that reflects your potential maximum achievable votes (total voting weight) or your already achieved and counted votes (current voting weight) in the decision. 
    - The total voting weight is calculated from the total token balance in a Firefly profile. As 1000 IOTA tokens can generate one vote on every milestone of the vote holding period, it is calculated as (Profile balance in IOTA / 1000) * number of milestones holding period.
    - The current voting weight displays your already counted and confirmed votes in the decision registered in the nodes based on the number of tokens you chose to use in the decision and the already passed milestones of the holding period.
 
-- Q: What is the commencing period?
-   - A: The commencing period is a seven-day time frame which should guarantee that every voter has enough time to cast a vote before the time-based counting of voting weight starts. In these seven days, you are free to cast a vote, change a vote, change the number of tokens used in the vote whenever you like. Only your last decision will be used to count during the upcoming holding period.
+- What is the commencing period?
+   - The commencing period is a seven-day time frame which should guarantee that every voter has enough time to cast a vote before the time-based counting of voting weight starts. In these seven days, you are free to cast a vote, change a vote, change the number of tokens used in the vote whenever you like. Only your last decision will be used to count during the upcoming holding period.
 
-- Q: What is the commencing period?
+- What is the commencing period?
    In these ten days, the nodes will count the vote you cast during the commencing period. Every milestone (10 seconds) in this holding period will add votes according to your used token balance to the total vote count. Counted votes are not reversible or changeable at this time. So every change that you make on your current set vote will only affect the upcoming milestones and vote count during these milestones.
 
-- Q: Can I move my tokens during the holding period?
+- Can I move my tokens during the holding period?
    - Yes, you can always move your tokens. The votes that have been counted until you decide to move your tokens will stay valid and are part of the total results.
 
-- Q: Is there some voting weight limit, or can someone with a huge wallet outnumber many smaller ones?
-   - A: The community has decided not to introduce any limitations. Limitations would not be adequate: everyone can split large wallets into smaller ones. Therefore it will not be possible to find out which wallets belong together and enforce limitations.
+- Is there some voting weight limit, or can someone with a huge wallet outnumber many smaller ones?
+   - The community has decided not to introduce any limitations. Limitations would not be adequate: everyone can split large wallets into smaller ones. Therefore it will not be possible to find out which wallets belong together and enforce limitations.
 
-- Q: Does the whole seed have to vote the same way at any given time? Is it possible to vote for Build with some tokens and Burn with other tokens?  
-   - A: If you wish to do this, we recommend creating two wallets inside your Firefly profile and allocating the IOTAs that should vote for Build in one wallet and the IOTAs that should vote for Burn in the second wallet. After that, initiate the voting process for the first wallet, complete it and then do it again for the second wallet for the other opinion.
+- Does the whole seed have to vote the same way at any given time? Is it possible to vote for Build with some tokens and Burn with other tokens?  
+   - If you wish to do this, we recommend creating two wallets inside your Firefly profile and allocating the IOTAs that should vote for Build in one wallet and the IOTAs that should vote for Burn in the second wallet. After that, initiate the voting process for the first wallet, complete it and then do it again for the second wallet for the other opinion.
 
 
 ## Counting and results
 
-- Q: Who will count the votes, and how will we know the correct result?
-   - A: All hornet node operators can count the votes with the implemented "participation plugin" in the node software. They produce files with the exact counting of their node. Those files can be compared and verified by the community. Also, nodes can open a so-called "API Endpoint" where everyone can see the current counting of this node.
+- Who will count the votes, and how will we know the correct result?
+   - All hornet node operators can count the votes with the implemented "participation plugin" in the node software. They produce files with the exact counting of their node. Those files can be compared and verified by the community. Also, nodes can open a so-called "API Endpoint" where everyone can see the current counting of this node.
 
-- Q: Can I see how other wallets voted?
-   - A: You can see how different addresses voted, but you cannot know which addresses belong together or belong to a person.
+- Can I see how other wallets voted?
+   - You can see how different addresses voted, but you cannot know which addresses belong together or belong to a person.
 
-- Q: Where can I see the current results?
+- Where can I see the current results?
    - You will have access to the current count of the Iota Foundation and some community nodes [here](link to "results")
      Also, the Firefly Wallet will display you the current count of the proposal in the detail view of the governance tab.
 
-- Q: What if my tokens are still "stuck" on an exchange, and I can't move them to Firefly?
-   - A: In that case, you will not be able to vote
+- What if my tokens are still "stuck" on an exchange, and I can't move them to Firefly?
+   - In that case, you will not be able to vote
 
-- Q: Does the Treasury website have access to my tokens?
-   - A: No, never. The website will never access your tokens or your seed or passwords. 
+- Does the Treasury website have access to my tokens?
+   - No, never. The website will never access your tokens or your seed or passwords. 
 
 
 ## General / others 
 
-- Q: If my tokens are on exchange, can I vote? If not, will I know if exchanges vote with their tokens?
-   - A: If the tokens are on an exchange, you are technically not the owner of the tokens, as you do not have a private key. So you cannot vote with tokens on exchanges.
+- If my tokens are on exchange, can I vote? If not, will I know if exchanges vote with their tokens?
+   - If the tokens are on an exchange, you are technically not the owner of the tokens, as you do not have a private key. So you cannot vote with tokens on exchanges.
 Exchanges will not take part in the vote. All major exchanges state this as part of their policy: they will not use the tokens to participate in any governance activities of projects.
 
-- Q: How does the vote work? Does it keep my vote secret? Or is it a transaction that anyone can see?
-   - A: Yes, your vote is public, like all transactions and messages in the Tangle. The vote is a value transaction with attached metadata in the indexation payload. As long as no one knows that the address you use belongs to you, the vote is private.
+- How does the vote work? Does it keep my vote secret? Or is it a transaction that anyone can see?
+   - Yes, your vote is public, like all transactions and messages in the Tangle. The vote is a value transaction with attached metadata in the indexation payload. As long as no one knows that the address you use belongs to you, the vote is private.
 
-- Q: Will the exchanges facilitate voting for those whose coins are in these exchanges? Or does everybody have to withdraw their coins to Firefly to vote?
-   - A: Exchanges will not include any voting options on their platforms for this vote. Everyone who wants to participate in the vote will need to withdraw the tokens from exchanges.
+- Will the exchanges facilitate voting for those whose coins are in these exchanges? Or does everybody have to withdraw their coins to Firefly to vote?
+   - Exchanges will not include any voting options on their platforms for this vote. Everyone who wants to participate in the vote will need to withdraw the tokens from exchanges.
 
-- Q: Does voting cost me anything?
-   - A: No.
+- Does voting cost me anything?
+   - No.
 
 ## TL;DR
 

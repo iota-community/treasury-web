@@ -50,12 +50,21 @@ jQuery(function ($) {
         });
 
     // Smooth scroll for faq anchor links
-    $("#faq-link").click(function(e) {
+    $("#faq-link, #faq-nav a").click(function(e) {
         var clickedId = $(this).attr('href');
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $(clickedId).offset().top - 150
         }, 1000);
+    });
+
+    // FAQs nav sticky
+    var sticky = new Sticky('#faq-nav');
+
+
+    // FAQs button active class
+    $("#faqs .button").click(function() {
+        $(this).toggleClass('active');
     });
 
     // Scroll reveal effect

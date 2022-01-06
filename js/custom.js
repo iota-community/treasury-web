@@ -59,7 +59,9 @@ jQuery(function ($) {
     });
 
     // FAQs nav sticky
-    var sticky = new Sticky('#faq-nav');
+    if( $('body').hasClass('start-stick')) {
+        var sticky = new Sticky('#faq-nav');
+    }
 
 
     // FAQs button active class

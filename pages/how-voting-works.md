@@ -48,8 +48,8 @@ A) Initiate your vote directly here on the website
 Start voting here
 
 B) Initiate a vote directly within the Firefly Wallet
-- You will prepare and execute your vote in the Firefly Wallet, which will receive an upgrade to include the Voting functionality. You can state your opinion of which option you choose on the proposal.
-- Further, you decide which wallet and token balance should participate in the vote. You can select/unselect all wallets in a profile. If you only want to use a part of your tokens, it is recommended to collect them in a separate wallet in your profile. You will now only need to confirm the pre-prepared voting transaction with your Stronghold password or Nano Ledger. 
+- You will prepare and execute your vote in the Firefly Wallet. Every user can install the latest update of the Firefly sodtware, which will implement the new voting functionality. You can state your opinion of which option you choose on the proposal.
+- Further, you decide which wallet and token balance should participate in the vote. You can individually vote with all wallets in a profile. If you only want to use a part of your tokens, it is recommended to collect them in a separate wallet in your profile. You will now only need to confirm the pre-prepared voting transaction with your Stronghold password or Nano Ledger. 
 
 Execution of the vote
 

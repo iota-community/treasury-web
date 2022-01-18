@@ -74,7 +74,7 @@ A large group of community members has been meeting every two weeks to define an
 ### How to vote
 
   - Hold IOTA tokens in the Firefly wallet
-    Every IOTA holders will receive an updated version of the Firefly Wallet from the [official website](https://firefly.iota.org) with an integrated voting functionality. Once you have updated Firefly, you can vote directly in the Firefly wallet.
+    Every IOTA holders can upgrade the Firefly Wallet from the [official website](https://firefly.iota.org) which adds the voting functionality to the Firefly wallet. Once you have updated Firefly, you can participate in the vote.
 
   - Reach your total voting weight by holding your tokens over time.
     The number of your votes is related to the amount of tokens you choose to participate in the vote over a time frame of ten days. 1000 IOTA = 1 vote per milestone that passes during the ten-day holding period.

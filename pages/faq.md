@@ -3,11 +3,11 @@
 ## Unclaimed tokens
 
 - What are the unclaimed tokens?
-   - The pool of IOTA tokens up for a vote in this decision generates from 2 events:
+   - The pool of IOTA tokens up for a vote in this decision originates from 2 events:
    - 1.) The initial token sale of IOTA in 2015: 
      Early initial investors had the chance to buy IOTA tokens before the start of the IOTA Mainnet in 2015. They had to deposit Bitcoin, Next, or Jinn tokens to the founders, and for this, they had the right to claim IOTA tokens in a 90-day time frame after the Mainnet was launched. Some have missed this 90-day time frame for claiming. Over the following years, the involved parties have tried their best to find the remaining claimers and, by doing this, identified most of the initial purchasers. Despite all those attempts, some have never shown up again. The remaining funds from this process are now part of the unclaimed tokens pool, which is up for a vote in this recent decision.
    - 2.) The Kerl / Curl Bug in 2017:
-     In 2017 a bug in the IOTA code was discovered, putting some users' funds at risk of being stolen. In a decision to protect the funds on IOTA addresses exposed to this bug, all IOTA Node operators voted to secure those addresses, transfer the funds into the custody of the IOTA Foundation, update the protocol to a bug-free version, and safe the holders from losing their tokens. After this network upgrade, the owners who have been affected by this decision had time until 16. June 2021 to reclaim their Funds by providing proof of ownership in a KYC process. Some, again, have failed to reclaim their tokens until this date. The remaining funds from this process are now part of the unclaimed tokens pool, which is up for a vote in this current decision.   
+     In 2017 a bug in the IOTA code was discovered, putting some users' funds at risk of being stolen. In a decision to protect the funds on IOTA addresses exposed to this bug, all IOTA Node operators voted to secure those addresses, transfer the funds into the custody of the IOTA Foundation, update the protocol to a bug-free version, and save the holders from losing their tokens. After this network upgrade, the owners who have been affected by this decision had time until 16. June 2021 to reclaim their Funds by providing proof of ownership in a KYC process. Some, again, have failed to reclaim their tokens until this date. The remaining funds from this process are now part of the unclaimed tokens pool, which is up for a vote in this current decision.   
      
 - How many tokens are unclaimed?
    - After processing all existing claims, the remaining token amount in the unclaimed treasury pool is xx TI
@@ -102,7 +102,7 @@
 
 - If my tokens are on exchange, can I vote? If not, will I know if exchanges vote with their tokens?
    - If the tokens are on an exchange, you are technically not the owner of the tokens, as you do not have a private key. So you cannot vote with tokens on exchanges.
-Exchanges will not take part in the vote. All major exchanges state this as part of their policy: they will not use the tokens to participate in any governance activities of projects.
+We assume that exchanges will not take part in the vote. All major exchanges state this as part of their policy: they will usually not use the tokens they hold to participate in any governance activities of projects.
 
 - How does the vote work? Does it keep my vote secret? Or is it a transaction that anyone can see?
    - Yes, your vote is public, like all transactions and messages in the Tangle. The vote is a value transaction with attached metadata in the indexation payload. As long as no one knows that the address you use belongs to you, the vote is private.

@@ -1,3 +1,5 @@
+/*
+
 // Set the date we're counting down to
 var countDownDate = new Date("Dec 24, 2021 18:00:00").getTime();
 
@@ -26,3 +28,5 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+*/

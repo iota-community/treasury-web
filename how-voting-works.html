@@ -26,7 +26,8 @@
 <body>
 	<a class="skip-link screen-reader-text" href="#page"></a>
 	<div id="info-message" class="white text-center">
-		Voting on the Community Proposal is live   |   <strong><span id="countdown"></span> remaining</strong>
+		Voting on the community proposal is not yet live.
+		<!--Voting on the Community Proposal is live   |   <strong><span id="countdown"></span> remaining</strong>-->
 	</div>
 	<header id="masthead" class="site-header offset">
 		<div class="container -lvl--1">
@@ -44,8 +45,8 @@
 					<a href="how-voting-works.html">How voting works</a>
 					<a href="voting-tutorial.html">Tutorial</a>
 					<a href="faq.html">FAQs</a>
-					<a href="#">Results</a>
-					<a href="#" class="button smaller">Cast your vote</a>
+					<!--<a href="#">Results</a>-->
+					<!--<a href="#" class="button smaller">Cast your vote</a>-->
 				</div>
 			</div>
 		</div>
@@ -128,8 +129,8 @@
 						<p>This website includes a voting application. In this application, you can prepare your initial decision between Build or Burn.</p>
 						<p>Once this decision is taken, your vote will be forwarded to your Firefly wallet, where further selection and confirmation steps are required from you. Start voting here</p>
 						<p class="top-75 bit-larger"><strong>B) Initiate a vote directly within the Firefly Wallet</strong></p>
-						<p>You will prepare and execute your vote in the Firefly Wallet, which will receive an upgrade to include the Voting functionality. You can state your opinion of which option you choose on the proposal.</p>
-						<p>Further, you decide which wallet and token balance should participate in the vote. You can select/unselect all wallets in a profile. If you only want to use a part of your tokens, it is recommended to collect them in a separate wallet in your profile. You will now only need to confirm the pre-prepared voting transaction with your Stronghold password or Nano Ledger.</p>
+						<p>You will prepare and execute your vote in the Firefly Wallet. Every user can install the latest update of the Firefly sodtware, which will implement the new voting functionality. You can state your opinion of which option you choose on the proposal.</p>
+						<p>Further, you decide which wallet and token balance should participate in the vote. You can individually vote with all wallets in a profile. If you only want to use a part of your tokens, it is recommended to collect them in a separate wallet in your profile. You will now only need to confirm the pre-prepared voting transaction with your Stronghold password or Nano Ledger.</p>
 						<p class="top-75 bit-larger"><strong>Execution of the vote</strong></p>
 						<p>The voting mechanism uses IOTA’s capability to issue value transactions with attached metadata. In a vote, a transaction will send the tokens residing on an address (and specifically, the unspent transaction outputs (UTXO) on the Tangle). In this transaction, the sender and receiver address is identical (you are sending the tokens to yourself). During this transaction, the metadata (vote event ID, voter opinion ID: build or burn) will be attached, and therefore immutably written onto the UTXOs of this address in the IOTA Tangle. So after the voting transaction, the tokens will still reside on the same address as before, but now with attached information that represents the voter's opinion.</p>
 						<p>An external security audit provider will thoroughly audit this functionality.</p>
@@ -204,7 +205,7 @@
 				</div>
 				<div class="row top-75 d-block">
 					<div class="col col-lg-8">
-						<p class="bit-larger">Let's look at a few examples of the possible voting weight based on different variables:</p>
+						<p class="bit-larger"><strong>Let's look at a few examples of the possible voting weight based on different variables:</strong></p>
 						<ul>
 							<li>If the holding phase is ten days and a user has a balance of 100 Miota (Mi) in their Firefly wallet, which is used to vote:</li>
 							<li>Holding the tokens for the entire ten days of the required holding period will give the voter 100% of the possible voting weight.</li>
@@ -230,7 +231,7 @@
 				<div class="row top-75 d-block d-lg-flex">
 					<div class="col col-lg-8">
 						<p>The community validates the results. Once the defined time window of the vote has passed (7days commencing + 10 days holding period), the Hornet node operators who participated in the counting of the ballot can submit their vote result and the checksum of the produced voting file to a public Github Repository. Here everyone will be able to look into the delivered results and verify that all participating nodes have produced the same result. Community node operators will check and validate submitted vote results to ensure that no differences in the results exist.</p>
-						<p>Community-defined voting rules.</p>
+						<p><strong>Community-defined voting rules.</strong></p>
 						<ul>
 							<li>100% of all valid IOTA votes has been defined as the total amount of IOTA tokens successfully migrated into the Chrysalis network at the milestone 'holding period end'.</li>
 							<li>A minimum total participation is not required to create a legitimate and binding vote outcome. Only the number of valid votes cast during the defined entire voting period will determine the result.</li>
@@ -243,6 +244,7 @@
 				</div>
 			</div>
 		</div>
+		<!--
 		<div id="ready">
 			<div class="container top-100 bottom-100">
 				<div class="row d-block d-sm-flex flex-center text-xs-center">
@@ -255,6 +257,7 @@
 				</div>
 			</div>
 		</div>
+		-->
 		<div id="tiles" class="container top-120">
 			<div class="row d-block d-md-flex">
 				<div class="col col-md-6 col-lg-4">

@@ -211,6 +211,10 @@ table {
     max-width: 500px;
 }
 
+.max-700 {
+    max-width: 700px;
+}
+
 .flex-center {
 	align-items: center;
 }
@@ -374,6 +378,11 @@ img.icon {
 	-moz-transition: all 200ms ease-in-out;
 	-webkit-transition: all 200ms ease-in-out;
 	transition: all 200ms ease-in-out;
+}
+
+#masthead #main-menu a.active-link::after {
+	opacity: 1;
+	bottom: -10px;
 }
 
 #masthead #main-menu a:hover, #masthead #main-menu a:focus {

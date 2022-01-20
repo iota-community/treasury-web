@@ -12,6 +12,16 @@ jQuery(function ($) {
         }
     });
 
+    // Add class to current active url
+    $( document ).ready(function() {
+        var path = window.location.href;
+        $('#main-menu a').each(function() {
+        if (this.href === path) {
+            $(this).addClass('active-link');
+            }
+        });
+    });
+
     // mobile menu
         // #main-menu toggle & aria changing
         $('.navbar-toggle').on("click", function(){

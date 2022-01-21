@@ -72,6 +72,10 @@ button.bit-larger {
     font-weight: 400;
 }
 
+.small, .small a {
+	font-size: 14px;
+}
+
 a:visited, a:any-link {
 	color: #000;
 }
@@ -173,6 +177,10 @@ table {
 
 .top-20 {
     margin-top: 20px;
+}
+
+.top-30 {
+	margin-top: 30px;
 }
 
 .top-40 {
@@ -674,6 +682,14 @@ img.icon {
 
 #socials a:hover img, #socials a:focus img {
 	transform: scale(1.1);
+}
+
+#sub-footer a {
+	text-decoration: underline;
+}
+
+#sub-footer a:hover {
+	text-decoration: none;
 }
 
 /* Responsive */

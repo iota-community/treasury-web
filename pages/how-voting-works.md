@@ -14,12 +14,12 @@ title: How voting works
 *Proposal announcement:*
   - Upon publishing the vote proposal to the GitHub Repository and implementing and displaying it to the Treasury website, the Hornet node operators can implement the vote proposal now as an event in their nodes. The participating nodes are now observing the Tangle and are ready to count votes for this proposal. 
 
-*Pre-vote (seven days):*
-  -  The pre-vote phase starts at a predefined point in time (a milestone) in the IOTA network. Users can now vote using the Firefly wallets voting functionality. Changes in voters' opinions during this time frame can be done without influencing the final vote count of the voter. 
+*Voting open (seven days):*
+  -  The 'voting open" phase starts at a predefined point in time (a milestone) in the IOTA network. Users can now vote using the Firefly wallets voting functionality. Changes in voters' opinions during this timeframe can be done without influencing the final vote count of the voter. 
 Voters are required to initiate the vote during these seven days to gain their maximum possible votes counted.
 
-*Counting (10 days)*
-  - This period follows the pre-vote phase: the declared vote of a user is now counted. The number of counted votes will increase with every passing milestone (one milestone is issued every 10 seconds) in the network. If a voter did issue the vote during the pre-vote phase,  the vote would reach the maximum possible counted votes related to the number of tokens used by the voter. 
+*Counting start (10 days)*
+  - This period follows the "voting open" phase: the declared vote of a user is now counted. The number of counted votes will increase with every passing milestone (one milestone is issued every 10 seconds) in the network. If a voter did issue the vote during the "voting open" phase,  the vote would reach the maximum possible counted votes related to the number of tokens used by the voter. 
 If a voter attempts changing the selected vote option in this timeframe, the counting for the new option starts with the confirmation of the change in Firefly. Although the option has changed and new votes are now counted for a different option,  the previously counted votes for the first option are not dismissed and count as valid votes.
 ![image](https://user-images.githubusercontent.com/77154511/147462450-35668104-9922-474b-85d4-71f232af1830.png)
 
@@ -28,7 +28,7 @@ If a voter attempts changing the selected vote option in this timeframe, the cou
 ### Achieving your maximum vote count.
 
 Any IOTA token holder that holds IOTA tokens in the Firefly Wallet can participate in the vote.
-- The number of your votes is directly related to the number of tokens you commit during the counting time frame of ten days. Every 1000 IOTA tokens (0,01 Miota) used to vote will create 1 vote every 10 seconds. The sum of all those votes counted over ten days will be your total votes in this decision.
+- The number of your votes is directly related to the number of tokens you commit during the counting time frame of ten days to the vote. Every 1000 IOTA tokens (0,01 Miota) used to vote will create 1 vote every 10 seconds. The sum of all those votes counted over ten days will be your total votes in this decision.
 
 Hold IOTA tokens in the Firefly wallet to cast a vote.
   - IOTA holders can download an updated version of the Firefly wallet with integrated voting functionality once this version is ready.
@@ -36,7 +36,7 @@ Hold IOTA tokens in the Firefly wallet to cast a vote.
   - You can only participate if you hold IOTA tokens in the Firefly wallet.
 
 Increase your counted votes by holding tokens during the counting period.
-  - The number of votes counted for your tokens is directly related to the time you hold the tokens in the vote during the counting period. Nodes register and add votes per address every 10 seconds to the count.
+  - The number of votes counted for your tokens is directly related to the time you hold the tokens in the vote during the counting period (starting with the "counting start" phase). Nodes register and add votes per address every 10 seconds to the count.
    - Only votes kept from the beginning until the end of the counting period can reach their maximum potential counted votes.
 ![image](https://user-images.githubusercontent.com/77154511/147462519-a70a0a04-110e-49d4-884d-dff04754531b.png)
 
@@ -73,9 +73,9 @@ Votes get counted in the Hornet nodes.
     - Voter opinion ID written to this UTXO.  
     - Number of tokens residing on the UTXO.
 - The plugin keeps track of all those UTXOs and adds new ones as soon as they appear in the ledger or stops further counting them as soon as they disappear. This [Github repo](hornet/participation.go at develop · gohornet/hornet (github.com)) contains the exact structure of the counting mechanism.
-- Counting happens from the defined "start holding – milestone" till the defined "end holding – milestone." as defined in the [specification](treasury/hornet-participation-plugin.md at main · iota-community/treasury (github.com))
+- Counting happens from the defined "counting start – milestone" till the defined "counting stop – milestone." as defined in the [specification](treasury/hornet-participation-plugin.md at main · iota-community/treasury (github.com))
 - As a new milestone is issued every 10 seconds, it produces an exact counting as every change in opinions or balances will be recognized in a 10-second time frame.
-- After the defined "holding end – milestone," the plugin produces an output with all observed UTXOs, balances, indexation payloads per milestone, and the final result as an accumulation of that milestone data. That information will also be available live during the vote via an API endpoint in every node.
+- After the defined "stop counting – milestone," the plugin produces an output with all observed UTXOs, balances, indexation payloads per milestone, and the final result as an accumulation of that milestone data. That information will also be available live during the vote via an API endpoint in every node and displayed here on the website and in your Firefly wallet.
 - The result will be produced and verified in a decentralized fashion through every node participating in the counting. At the beginning of the counting period, the respective number of votes is counted for every milestone in which tokens containing attached voting metadata reside on a UTXO. 
 - These live results will be visible [here on the website]
 ![image](https://user-images.githubusercontent.com/77154511/147462603-d9fea39d-bf8c-4687-8429-5a985293315d.png)
@@ -93,7 +93,7 @@ This method would produce during a counting period of 1500 milestones the follow
     
 ![image](https://user-images.githubusercontent.com/77154511/147019444-74cdd099-25f1-4584-88d9-788a8c299cbe.png)
 
-- All nodes will count all UTXO with attached voting metadata they observe during the "counting period" of the vote and add up the votes for every milestone until the counting phase ends (marked by a predefined ending milestone).
+- All nodes will count all UTXO with attached voting metadata they observe during the "counting phase" of the vote and add up the votes for every milestone until the counting phase ends (marked by a predefined ending milestone).
 This counting mechanism also leads to the fact that the "vote holding time" for tokens will greatly influence the result. Votes gain "weight" in relation to how long they are kept on an address. This is a crucial security feature of the voting mechanism that will reward long term token holders and punish voting "speculators" or "vote buyers" by forcing them to lock capital over a longer time period and making an attempt to "buy votes" a speculative risk due to the potential IOTA price volatility in the ten days counting period. 
 
 
@@ -102,10 +102,10 @@ This counting mechanism also leads to the fact that the "vote holding time" for 
 
 Let's look at a few examples of the possible vote count based on different variables:
 - If the counting phase of a vote is ten days and a user has a balance of 100 Miota (Mi) in their Firefly wallet, which is used to vote:
-- Holding the tokens for the entire ten days of the required counting period will give the voter 100% of the possible vote counts.
+- Holding the tokens for the entire ten days of the required counting phase will give the voter 100% of the possible vote counts.
 - Holding the tokens for only seven consecutive days of 10 full days would reach only 70% of the maximum possible vote counts.
-Executing a vote after the counting period has already started (for example, on day two of 10 days total) and not changing the vote until the end of the counting period, the voter would gain 80% of the possible vote count of the 100 Mi.
-- Starting the vote at the beginning of the counting period with "Burn," keeping this opinion for three days and then changing to "Build," holding it for the remaining seven days would result in the following outcome:
+Executing a vote after the counting phase has already started (for example, on day two of 10 days total) and not changing the vote until the end of the counting phase the voter would gain 80% of the possible vote count of the 100 Mi.
+- Starting the vote at the beginning of the counting phase with "Burn," keeping this opinion for three days and then changing to "Build," holding it for the remaining seven days would result in the following outcome:
 
 100 Mi vote three days for "Burn": 30% of the user's maximum achievable votes are counted for "Burn."
 Now, changing the vote,  for the remaining seven days, 100 Mi vote for "Build": the remaining 70% of the user's available votes are counted for "Build"

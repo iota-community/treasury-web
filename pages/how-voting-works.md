@@ -72,12 +72,12 @@ Votes get counted in the Hornet nodes.
     - UTXO's that contain the event ID of the vote. 
     - Voter opinion ID written to this UTXO.  
     - Number of tokens residing on the UTXO.
-- The plugin keeps track of all those UTXOs and adds new ones as soon as they appear in the ledger or stops further counting them as soon as they disappear. This [Github repo](hornet/participation.go at develop · gohornet/hornet (github.com)) contains the exact structure of the counting mechanism.
-- Counting happens from the defined "counting start – milestone" till the defined "counting stop – milestone." as defined in the [specification](treasury/hornet-participation-plugin.md at main · iota-community/treasury (github.com))
+- The plugin keeps track of all those UTXOs and adds new ones as soon as they appear in the ledger or stops further counting them as soon as they disappear. This [Github repo](https://github.com/gohornet/hornet/tree/develop/plugins/participation) contains the exact structure of the counting mechanism.
+- Counting happens from the defined "counting start – milestone" till the defined "counting stop – milestone." as defined in the [specification](https://github.com/iota-community/treasury/blob/main/specifications/hornet-participation-plugin.md)
 - As a new milestone is issued every 10 seconds, it produces an exact counting as every change in opinions or balances will be recognized in a 10-second time frame.
 - After the defined "stop counting – milestone," the plugin produces an output with all observed UTXOs, balances, indexation payloads per milestone, and the final result as an accumulation of that milestone data. That information will also be available live during the vote via an API endpoint in every node and displayed here on the website and in your Firefly wallet.
 - The result will be produced and verified in a decentralized fashion through every node participating in the counting. At the beginning of the counting period, the respective number of votes is counted for every milestone in which tokens containing attached voting metadata reside on a UTXO. 
-- These live results will be visible [here on the website]
+
 ![image](https://user-images.githubusercontent.com/77154511/147462603-d9fea39d-bf8c-4687-8429-5a985293315d.png)
 
 

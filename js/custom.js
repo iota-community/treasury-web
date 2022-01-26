@@ -59,8 +59,8 @@ jQuery(function ($) {
             }
         });
 
-    // Smooth scroll for faq anchor links
-    $("#faq-link, #faq-nav a").click(function(e) {
+    // Smooth scroll for faq anchor links & Tutorial intro buttons
+    $("#faq-link, #faq-nav a, #tutorial-links a").click(function(e) {
         var clickedId = $(this).attr('href');
         e.preventDefault();
         $('html, body').animate({

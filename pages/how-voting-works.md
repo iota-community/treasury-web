@@ -85,7 +85,7 @@ Votes get counted in the Hornet nodes.
 ### Time based counting of votes
 
 
-The community has decided that 1000 IOTA (0,01 Mi) generate 1 vote every 10 seconds (with every new appearing milestone) in the counting period.
+The community has decided that 1000 IOTA (0,001 Mi) generate 1 vote every 10 seconds (with every new appearing milestone) in the counting period.
 - So a vote of 1 Mi for "build" will be counted like this:
 1000 votes counted for build on milestone x + 1000 votes counted for build on milestone y, + 1000 votes counted for build on milestone y... 
 This method would produce during a counting period of 1500 milestones the following vote count:

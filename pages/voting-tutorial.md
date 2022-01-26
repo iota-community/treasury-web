@@ -34,7 +34,7 @@ You will now confirm your vote with the stronghold password or your Ledger Nano 
 You will receive a confirmation that your vote has been submitted.
  
 
-4. Once your vote is confirmed, you will see in the governance tab which of the two opinions you have selected and how many votes you have cast in this vote. Also the remaining times of the respective phases of the vote are always displayed.
+4. Once your vote is confirmed, you will see in the governance tab which of the two opinions you have selected and how many votes you have cast in this vote. Also the remaining time before counting of the votes begins is displayed.
 ![voted before counting](https://user-images.githubusercontent.com/77154511/151155579-dfd2ac67-ca6f-4016-b5f4-f8cb690bd233.png)
 
 

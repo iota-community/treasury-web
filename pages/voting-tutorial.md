@@ -63,7 +63,8 @@ Also Firefly will display you the current global count of the ongoing vote in re
 Congratulations! You have completed the voting and can now close your wallet.
 
 Would you like to change your opinion or stopp to vote follows the same steps as described before. The only difference is that now votes that have been already counted for you are not influenced by your decision and remain counted even if you stop voting.
-![stop vote during  counting](https://user-images.githubusercontent.com/77154511/151157781-67f4b838-5904-42dc-b174-53ca907ffc95.png)
+![stop vote during  counting](https://user-images.githubusercontent.com/77154511/151158998-9f3b2075-7043-4db3-a7ce-c1b9ed359e77.png)
+
 
 
 ## *Case three: Adding new received tokens to an already existing vote.*
@@ -75,6 +76,7 @@ Firefly will highlight once new tokens are available in a Wallet and highlight t
 Use this functionality, and Firefly will allow you to either "stop vote" or "merge" the uncasted tokens.
 ![confirm merge](https://user-images.githubusercontent.com/77154511/151156598-420648c3-4608-46fa-90ff-d6497ff26ab1.png)
 
+Newly added tokens will now also be counted, while the existing counts of the previous already used tokens also continue.
 
 Again, confirm everything with your password or Ledger device, and you are already set.
 

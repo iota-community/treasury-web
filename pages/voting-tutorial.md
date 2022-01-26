@@ -4,41 +4,58 @@ title: Voting tutorial
 ---
 # Voting Tutorial
 
-Your vote will happen in the secure environment of the IOTA Firefly Wallet. Either by using your Firefly wallet directly on your device, accessing a profile, and entering the “governance” tab or by initiating the vote from within this website, which will open your Firefly wallet directly on the designated vote functionality.
+You will vote in the secure environment of the IOTA Firefly Wallet. Either by using your Firefly Wallet directly on your device, accessing a profile, and entering the new "governance" tab or by initiating the vote from within this website, which will open your Firefly Wallet directly on the designated vote functionality.
 
-The number of IOTA tokens you own will give you voting power in this decision.
-
+The number of IOTA tokens you own in a wallet of your Firefly profile decides how many votes you will be able to cast in this decision.
+You can vote with each of your wallets separately, and you are even free to vote on different opinions with different profile wallets.
+You can only use the total number of tokens in a wallet for voting. Should you want to use a smaller amount than currently in your wallet, please create a second wallet under your profile and move the number of tokens, you don't want to use to this new wallet before attempting to vote.
+Important notice! Voting and staking are completely separated functionalities and do not influence each other. Voting will not change your current staking process, and staking will not influence an ongoing vote.
 The procedure to cast a valid vote follows these steps. 
-1. Log in to your Firefly profile using your Pin code.
-<img width="964" alt="image" src="https://user-images.githubusercontent.com/77154511/147461834-57188455-8d14-46b6-9be8-f72495223a89.png">
+You have to update your Firefly Wallet to the latest version, which will be released on the official Firefly website once the final schedule for the vote is announced.
 
-2. Enter the "governance" tab in the sidebar
+Case one: Cast your vote in the seven-day "voting open" period.
+
+This is the standard way of voting and will let you achieve the maximum possible votes in this decision.
+1. Choose the wallet from which you want to cast a vote and enter the new "governance" tab in the sidebar
 ![Screenshot 2021-12-27 181725](https://user-images.githubusercontent.com/77154511/147462221-05b55137-99fd-4911-83af-2fe658a2b339.png)
 
-3. Cast your vote
-    - Upon entering the governance tab of the Firefly wallet or using the voting application on iotatreasury.org your first decision is to state your opinion on what should happen to the Treasury Tokens. Choose "cast your vote".
-
+2. Cast your vote
+    - Upon entering the governance tab of one of your wallets, your first decision is to choose what should happen to the Treasury Tokens. Use the "cast vote" button in the option representing your opinion
 ![image](https://user-images.githubusercontent.com/77154511/147327259-7871d50b-02b0-4405-9dc5-1e95d5bcdad0.png)
-
-   - Decide for either Build or Burn by clicking the corresponding button. (Find exact definitions of Build and Burn here: link). 
     
-![image](https://user-images.githubusercontent.com/77154511/147327547-69da708c-2615-422d-9e4d-76d79fc07b96.png)
-
-4. Now, you are free to choose which of your profile wallets should participate in the vote. That means you are free to decide how many of your IOTA tokens you want to use to participate in this vote. If you plan to use only a part of your tokens, organize the number of tokens in your wallets before voting accordingly. By check-marking your different wallets, the tokens of this wallet are selected for voting. Confirm your selection with the “vote” button.
+3. Confirm your selection with the "confirm" button.
 ![image](https://user-images.githubusercontent.com/77154511/147327657-bb0fd8e8-08f4-4345-a0bc-c1808ef55129.png)
+You will now confirm your vote with the stronghold password or your Ledger Nano hardware wallet.
+You will receive a confirmation that your vote has been submitted.
+ 
 
-5. Confirm your decision.
-           A field will open that states how your vote will be issued (your opinion and the number of tokens you have
-           selected to vote). Check that everything is correct, and then click the “confirm vote”
-           Button.
-![image](https://user-images.githubusercontent.com/77154511/147327719-6bcddd73-7292-4bd1-9cd8-fb223c2d25a1.png)
+4. Once your vote is confirmed, you will see in the governance tab which of the two opinions you have selected and how many votes you have cast in this vote.
 
-6. Confirm your vote
-- Firefly executes the vote as a value transaction that sends your tokens to the same address where they have resided before already. It moves the chosen number of tokens and writes your vote opinion immutable onto the tangle attached to your addresses. You need to unlock your Firefly wallet with your Stronghold password or your Ledger Nano device to initiate this transaction. Find detailed technical specifications of the process [here](https://github.com/iota-community/treasury/blob/main/specifications/hornet-participation-plugin.md)  
-![image](https://user-images.githubusercontent.com/77154511/147327795-75cd83ea-2557-43b2-8f1e-983d2a7e0701.png)
-![image](https://user-images.githubusercontent.com/77154511/147327837-567b23fe-68da-4950-87c3-6a2bb669eed4.png)
+Congratulations! You have completed the voting and can now wait until the defined time frames have passed.
 
-7. Once your vote is confirmed, you will see it in the governance tab stating your opinion and how many votes you have cast in this vote.
-You will be able to change or cancel your vote from here also.
-![image](https://user-images.githubusercontent.com/77154511/147328290-9a1ab95d-9789-41bb-aae0-155d135ac1e8.png)
+No problem if you change your mind during the seven-day "voting open" periods. You are free to stop the vote or change your opinion without consequences during this time frame.
 
+Use the "manage vote" button in the option you have previously chosen and the use "stop voting." Confirm the decision with your password or Ledger wallet, and Firefly will remove your votes.
+
+You are now free to initiate a new vote as described above at any time.
+
+
+Case two: Cast your vote in the ten days lasting "counting open" period.
+
+This is also possible, but as some time may have already passed where your votes could have been counted, and the number of votes you can achieve depends on how long your tokens participate in the vote, you may have missed a certain amount of possible votes.
+Nevertheless, voting is as easy as before. You follow the same steps as described in case one.
+
+Congratulations! You have completed the voting and can now wait until the defined time frames have passed.
+Changing your opinion or stopping to vote is now also possible and follows the same steps as described before. The only difference is that now votes that have been counted for you already are not influenced by your decision and remain counted even if you stop voting.
+
+Case three: Adding new received tokens to an already existing vote
+
+Should you receive more tokens in a wallet that is already participating in voting, you can easily merge these freshly received tokens to your existing vote.
+Firefly will highlight once new tokens are available in a Wallet and highlight the "manage vote" option.
+Use this functionality, and Firefly will allow you to either "stop vote" or "merge" the uncasted tokens.
+
+Again, confirm everything with your password or Ledger device, and you are already set.
+
+We hope you enjoy the new Firefly voting functionality.
+
+Should you have any problems with the functionality, please visit the #help channel in the official IOTA Discord: https://discord.iota.org

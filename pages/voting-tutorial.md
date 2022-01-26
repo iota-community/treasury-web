@@ -17,25 +17,36 @@ You have to update your Firefly Wallet to the latest version, which will be rele
 
 This is the standard way of voting and will let you achieve the maximum possible votes in this decision.
 1. Choose the wallet from which you want to cast a vote and enter the new "governance" tab in the sidebar
-![Screenshot 2021-12-27 181725](https://user-images.githubusercontent.com/77154511/147462221-05b55137-99fd-4911-83af-2fe658a2b339.png)
+![Governance dashboard1](https://user-images.githubusercontent.com/77154511/151154983-7bd7584e-9ae6-4675-8a0d-6e89dff1cc4e.png)
+
 
 2. Cast your vote
     - Upon entering the governance tab of one of your wallets, your first decision is to choose what should happen to the Treasury Tokens. Use the "cast vote" button in the option representing your opinion
-![image](https://user-images.githubusercontent.com/77154511/147327259-7871d50b-02b0-4405-9dc5-1e95d5bcdad0.png)
+![cast vote open](https://user-images.githubusercontent.com/77154511/151155055-6e6b559e-8d48-44bb-a5f2-e0f505ab946b.png)
+
     
 3. Confirm your selection with the "confirm" button.
-![image](https://user-images.githubusercontent.com/77154511/147327657-bb0fd8e8-08f4-4345-a0bc-c1808ef55129.png)
+![confirm vote](https://user-images.githubusercontent.com/77154511/151155123-4d381fc3-3050-4bdf-b126-19fcfafb061a.png)
+
+
 You will now confirm your vote with the stronghold password or your Ledger Nano hardware wallet.
+
 You will receive a confirmation that your vote has been submitted.
  
 
-4. Once your vote is confirmed, you will see in the governance tab which of the two opinions you have selected and how many votes you have cast in this vote.
+4. Once your vote is confirmed, you will see in the governance tab which of the two opinions you have selected and how many votes you have cast in this vote. Also the remaining times of the respective phases of the vote are always displayed.
+![voted before counting](https://user-images.githubusercontent.com/77154511/151155579-dfd2ac67-ca6f-4016-b5f4-f8cb690bd233.png)
+
 
 Congratulations! You have completed the voting and can now wait until the defined time frames have passed.
 
-No problem if you change your mind during the seven-day "voting open" periods. You are free to stop the vote or change your opinion without consequences during this time frame.
+It is also no problem if you change your mind during the seven-day "voting open" periods. You are free to stop the vote or change your opinion without consequences during this time frame.
 
-Use the "manage vote" button in the option you have previously chosen and the use "stop voting." Confirm the decision with your password or Ledger wallet, and Firefly will remove your votes.
+In the governance dashboard, use the "manage vote" button dispalyed next to the option you have previously chosen (highlighted as "selected") and use "stop voting". 
+![stop vote before counting](https://user-images.githubusercontent.com/77154511/151155739-ac691c04-fd62-46ba-af31-69663b4c189d.png)
+
+
+Confirm the decision with your password or Ledger wallet, and Firefly will remove your votes.
 
 You are now free to initiate a new vote as described above at any time.
 
@@ -44,15 +55,25 @@ You are now free to initiate a new vote as described above at any time.
 
 This is also possible, but as some time may have already passed where your votes could have been counted, and the number of votes you can achieve depends on how long your tokens participate in the vote, you may have missed a certain amount of possible votes.
 Nevertheless, voting is as easy as before. You follow the same steps as described in case one.
+As the counting is already ongoing, you can see how much time is still remaining till the counting ends.
+Also Firefly will display you the current global count of the ongoing vote in real time. 
+![vote start during counting](https://user-images.githubusercontent.com/77154511/151157262-0291249a-7de2-4c5c-b487-1db4a5504e04.png)
 
-Congratulations! You have completed the voting and can now wait until the defined time frames have passed.
-Changing your opinion or stopping to vote is now also possible and follows the same steps as described before. The only difference is that now votes that have been counted for you already are not influenced by your decision and remain counted even if you stop voting.
+Congratulations! You have completed the voting and can now close your wallet.
+
+Would you like to change your opinion or stopp to vote follows the same steps as described before. The only difference is that now votes that have been already counted for you are not influenced by your decision and remain counted even if you stop voting.
+![stop vote during  counting](https://user-images.githubusercontent.com/77154511/151157781-67f4b838-5904-42dc-b174-53ca907ffc95.png)
+
 
 ## *Case three: Adding new received tokens to an already existing vote.*
 
 Should you receive more tokens in a wallet that is already participating in voting, you can easily merge these freshly received tokens to your existing vote.
 Firefly will highlight once new tokens are available in a Wallet and highlight the "manage vote" option.
+![merge votes](https://user-images.githubusercontent.com/77154511/151156295-0a069025-8d59-4baa-b2d8-cb8dc20f9433.png)
+
 Use this functionality, and Firefly will allow you to either "stop vote" or "merge" the uncasted tokens.
+![confirm merge](https://user-images.githubusercontent.com/77154511/151156598-420648c3-4608-46fa-90ff-d6497ff26ab1.png)
+
 
 Again, confirm everything with your password or Ledger device, and you are already set.
 

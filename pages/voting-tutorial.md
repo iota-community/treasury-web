@@ -13,7 +13,7 @@ Important notice! Voting and staking are completely separated functionalities an
 The procedure to cast a valid vote follows these steps. 
 You have to update your Firefly Wallet to the latest version, which will be released on the official Firefly website once the final schedule for the vote is announced.
 
-Case one: Cast your vote in the seven-day "voting open" period.
+## *Case one: Cast your vote in the seven-day "voting open" period.*
 
 This is the standard way of voting and will let you achieve the maximum possible votes in this decision.
 1. Choose the wallet from which you want to cast a vote and enter the new "governance" tab in the sidebar
@@ -40,7 +40,7 @@ Use the "manage vote" button in the option you have previously chosen and the us
 You are now free to initiate a new vote as described above at any time.
 
 
-Case two: Cast your vote in the ten days lasting "counting open" period.
+## *Case two: Cast your vote in the ten days lasting "counting open" period.*
 
 This is also possible, but as some time may have already passed where your votes could have been counted, and the number of votes you can achieve depends on how long your tokens participate in the vote, you may have missed a certain amount of possible votes.
 Nevertheless, voting is as easy as before. You follow the same steps as described in case one.
@@ -48,7 +48,7 @@ Nevertheless, voting is as easy as before. You follow the same steps as describe
 Congratulations! You have completed the voting and can now wait until the defined time frames have passed.
 Changing your opinion or stopping to vote is now also possible and follows the same steps as described before. The only difference is that now votes that have been counted for you already are not influenced by your decision and remain counted even if you stop voting.
 
-Case three: Adding new received tokens to an already existing vote
+## *Case three: Adding new received tokens to an already existing vote.*
 
 Should you receive more tokens in a wallet that is already participating in voting, you can easily merge these freshly received tokens to your existing vote.
 Firefly will highlight once new tokens are available in a Wallet and highlight the "manage vote" option.

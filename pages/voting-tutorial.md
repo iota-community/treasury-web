@@ -53,7 +53,8 @@ You are now free to initiate a new vote as described above at any time.
 
 ## *Case two: Cast your vote in the ten days lasting "counting open" period.*
 
-This is also possible, but as some time may have already passed where your votes could have been counted, and the number of votes you can achieve depends on how long your tokens participate in the vote, you may have missed a certain amount of possible votes.
+This is also possible, but as counting of votes is already happening while you have not participated in the vote, you may reach less counted votes as in the standard "case one". The number of votes you can achieve depends on how long your tokens participate in the vote, so you may have missed a certain amount of possible votes.
+
 Nevertheless, voting is as easy as before. You follow the same steps as described in case one.
 As the counting is already ongoing, you can see how much time is still remaining till the counting ends.
 Also Firefly will display you the current global count of the ongoing vote in real time. 

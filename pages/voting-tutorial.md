@@ -42,7 +42,7 @@ Congratulations! You have completed the voting and can now wait until the define
 
 It is also no problem if you change your mind during the seven-day "voting open" period. You are free to stop the vote or change your opinion without consequences during this time frame.
 
-In the governance dashboard, use the "manage vote" button dispalyed next to the option you have previously chosen (highlighted as "selected") and use "stop voting". 
+In the governance dashboard, use the "manage vote" button dispalyed next to the option you have previously chosen (highlighted as "selected") and use "stop vote". 
 ![stop vote before counting](https://user-images.githubusercontent.com/77154511/151155739-ac691c04-fd62-46ba-af31-69663b4c189d.png)
 
 

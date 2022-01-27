@@ -278,6 +278,11 @@ a.blue-link {
 	min-width: unset;
 }
 
+.button.detailed span {
+	padding-top: 5px;
+	display: block;
+}
+
 .left {
 	margin-left: 0 !important;
 }
@@ -346,6 +351,11 @@ img.icon {
 	-moz-transition: all 250ms ease-in-out;
 	-webkit-transition: all 250ms ease-in-out;
 	transition: all 250ms ease-in-out;
+}
+
+.box-shadow {
+	-webkit-box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+	box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
 }
 
 /* Header */
@@ -574,6 +584,21 @@ img.icon {
 }
 
 /* Voting Tutorial */
+#tutorial-links {
+	margin-left: -25px;
+}
+
+#tutorial-links a {
+	min-width: 230px;
+	max-width: 100%;
+	padding: 15px;
+	margin: 0 10px 10px 10px;
+}
+
+#tutorial-links .small {
+	font-size: 13px;
+}
+
 .steps .box {
 	position: relative;
 }
@@ -1068,4 +1093,9 @@ img.icon {
 		transform: translateY(-50%);
 		z-index: 1;
 	}
+
+	#tutorial-links a {
+		min-width: 100%;
+	}
+	
 }

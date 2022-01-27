@@ -318,6 +318,10 @@ a.blue-link {
 	padding-bottom: 130px;
 }
 
+.box p:last-child, .box-white p:last-child {
+	margin-bottom: 0;
+}
+
 img.icon {
     position: absolute;
     top: 0;
@@ -800,10 +804,6 @@ img.icon {
 		width: 100px;
 		left: 50%;
 		transform: translateX(-50%);
-	}
-
-	#masthead #main-menu a:not(.button):hover::after, #masthead #main-menu a:not(.button):focus::after {
-		bottom: -6px;
 	}
 
 	/* homepage */

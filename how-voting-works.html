@@ -6,6 +6,32 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+  <title>How voting works | IOTA TREASURY</title>
+  <meta name="description" content="The 3 phases of the vote.">
+  <meta name="author" content="SoonLabs">
+
+  <meta property="og:title" content="How voting works | IOTA TREASURY">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="The 3 phases of the vote.">
+  <meta property="og:url" content="https://iotatreasury.org/how-voting-works.html">
+  <meta property="og:image" content="img/social-preview.jpg">
+
+  <meta name="twitter:title" content="How voting works | IOTA TREASURY">
+  <meta name="twitter:description" content="The 3 phases of the vote.">
+  <meta name="twitter:card" content="Upon publishing the vote proposal to the GitHub Repository and implementing and displaying it to the Treasury website, the Hornet node operators can implement the vote proposal now as an event in their nodes. The participating nodes are now observing the Tangle and are ready to count votes for this proposal.">
+  <meta name="twitter:url" content="https://iotatreasury.org/how-voting-works.html">
+  <meta name="twitter:image" content="img/social-preview.jpg" />
+
+  <link rel="icon" href="img/favicon.svg">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css?v=1.0.1">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <script src="js/countdown.js"></script>
+
 	<title>How voting works | IOTA TREASURY</title>
 	<meta name="description" content="How voting works">
 	<meta name="author" content="SitePoint">
@@ -23,6 +49,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css?v=1.0.1">
 	<script src="js/countdown.js"></script>
+
 </head>
 
 <body>
@@ -223,8 +250,8 @@
 									<li>Number of tokens residing on the UTXO.</li>
 								</ul>
 							</li>
-							<li>The plugin keeps track of all those UTXOs and adds new ones as soon as they appear in the ledger or stops further counting them as soon as they disappear. This [Github repo](hornet/participation.go at develop · gohornet/hornet (github.com)) contains the exact structure of the counting mechanism.</li>
-							<li>Counting happens from the defined "counting start – milestone" till the defined "counting stop – milestone." as defined in the <i>[specification](treasury/hornet-participation-plugin.md at main · iota-community/treasury (github.com))</i></li>
+							<li>The plugin keeps track of all those UTXOs and adds new ones as soon as they appear in the ledger or stops further counting them as soon as they disappear. This <a href="https://github.com/gohornet/hornet/tree/develop/plugins/participation" target="_blank">Github repo</a> contains the exact structure of the counting mechanism.</li>
+							<li>Counting happens from the defined "counting start – milestone" till the defined "counting stop – milestone." as defined in the <a href="https://github.com/iota-community/treasury/blob/main/specifications/hornet-participation-plugin.md" target="_blank">specification</a>.</li>
 							<li>As a new milestone is issued every 10 seconds, it produces an exact counting as every change in opinions or balances will be recognized in a 10-second time frame.</li>
 							<li>After the defined "stop counting – milestone," the plugin produces an output with all observed UTXOs, balances, indexation payloads per milestone, and the final result as an accumulation of that milestone data. That information will also be available live during the vote via an API endpoint in every node and displayed here on the website and in your Firefly wallet.</li>
 							<li>The result will be produced and verified in a decentralized fashion through every node participating in the counting. At the beginning of the counting period, the respective number of votes is counted for every milestone in which tokens containing attached voting metadata reside on a UTXO.</li>
@@ -253,7 +280,9 @@
 						</p>
 					</div>
 					<div class="col top-40">
-						<img class="border-radius" src="img/vote-count-example.svg" alt="Vote count example">
+						<a data-fancybox href="img/vote-count-example.svg">
+							<img class="border-radius box-shadow border-radius-70" src="img/vote-count-example.svg" alt="Vote count example">
+						</a>
 					</div>
 					<div class="col col-lg-8 top-40">
 						<p>All nodes will count all UTXO with attached voting metadata they observe during the "counting
@@ -300,7 +329,9 @@
 						</ul>
 					</div>
 					<div class="col top-40">
-						<img class="border-radius" src="img/voting-outcome.svg" alt="Voting count example">
+						<a data-fancybox href="img/voting-outcome.svg">
+							<img class="border-radius-70 box-shadow" src="img/voting-outcome.svg" alt="Voting count example">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -407,8 +438,14 @@
 			</div>
 		</div><!-- #footer -->
 
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/custom.js"></script>
+
 		<script src="js/jquery-3.6.0.min.js"></script>
 		<script src="js/custom.js"></script>
+
 </body>
 
 </html>

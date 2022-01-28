@@ -291,6 +291,10 @@ a.blue-link {
     border-radius: 30px;
 }
 
+.border-radius-70 {
+    border-radius: 70px;
+}
+
 .box {
     background: #F6F9FF;
 	border: 1px solid #D7E8FE;

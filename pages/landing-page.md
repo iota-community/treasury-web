@@ -37,11 +37,9 @@ The unclaimed tokens will be removed from the IOTA ledger, and the total supply 
 The crowd sale participants had agreed to collect their purchased tokens in a timeframe of 90 days following the launch of the IOTA network. Otherwise, purchasers may permanently lose access to the crowd sale tokens.
     
 *Box2*
-  - Network upgrade in 2017
+  - Change of the total IOTA supply in 2016
   
-    In October 2017, a bug revealed a part of the users’ private keys in the IOTA code was discovered. The IOTA full node operators voted to take any [funds at risk](https://blog.iota.org/iota-reclaim-identification-verification-process-e316647e06e6/) into custody. 
-
-As decided by the node operators, the control over those affected addresses was transferred to the IOTA Foundation to secure them, and the address owners needed to prove that they had a valid funds claim in a [Know Your Customer process](https://blog.iota.org/claims-and-reclaims-finalization-e692844c505a/). 
+    The total supply of IOTA tokens was decided to be increased to todays amount of 2.779.530.283.277.761 IOTA tokens from initial 1.000.000.000.000.000 Tokens offered in the crowd sale. This meant that every IOTA holder was requested to claim 1 IOTA tokens from the old supply to 2,779 IOTA tokens of the new supply. Some holders have never completed this claiming proccess und the tokens that have been leftover from this claim period are now also part of the Vote.
      
 *Box3*
   - Waiting and reclaim period

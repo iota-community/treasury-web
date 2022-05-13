@@ -39,7 +39,7 @@ The crowd sale participants had agreed to collect their purchased tokens in a ti
 *Box2*
   - Change of the total IOTA supply in 2016
   
-    The total supply of IOTA tokens was decided to be increased to todays amount of 2.779.530.283.277.761 IOTA tokens from initial 1.000.000.000.000.000 Tokens offered in the crowd sale. This meant that every IOTA holder was requested to claim 1 IOTA tokens from the old supply to 2,779 IOTA tokens of the new supply. Some holders have never completed this claiming proccess und the tokens that have been leftover from this claim period are now also part of the Vote.
+    The total supply of IOTA tokens was decided to be increased to todays amount of 2.779.530.283.277.761 IOTA tokens from initial 999.999.999.999 Tokens offered in the crowd sale. This meant that every IOTA holder was requested to claim 1 IOTA tokens from the old supply to 2779 IOTA tokens of the new supply. Some holders have never completed this claiming proccess und the tokens that have been leftover from this claim period are now also part of the Vote.
      
 *Box3*
   - Waiting and reclaim period
